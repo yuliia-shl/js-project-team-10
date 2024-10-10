@@ -57,6 +57,15 @@ document.querySelectorAll('.popup').forEach(popup => {
   });
 });
 
+// Закриття попап-вікна при натисканні Esc
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    document.querySelectorAll('.popup').forEach(popup => {
+      popup.style.display = 'none';
+    });
+  }
+});
+
 // Елементи для відкриття та закриття модального меню
 const menuToggle = document.getElementById('menuToggle');
 const modalMenu = document.getElementById('modalMenu');
