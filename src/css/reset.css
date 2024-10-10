@@ -6,39 +6,42 @@
 }
 
 :root {
-  --primary-color: #292929;
-  --bg-color-light: #ffffff;
-  --text-color-light: #333333;
-  --header-bg-color-light: #f5f5f5;
-  --text-color-highlight: #00b068;
+  /*шрифти*/
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Impact", sans-serif;
+  --third-family: "Montserrat", sans-serif;
 
-  --bg-color-dark: #1a1a1a;
-  --text-color-dark: #dcdcdc;
-  --header-bg-color-dark: #2b2b2b;
-
-  /* Активні змінні для тем */
-  --bg-color: var(--bg-color-light);
-  --text-color: var(--text-color-light);
-  --header-bg-color: var(--header-bg-color-light);
-  --button-bg-color: var(--primary-color);
-  --button-text-color: #ffffff;
+  /* Кольори */
+  --black: #292929;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --hover-grey: #bbb;
+  --light-accent: #bcdfd1;
+  --hover: #009156;
+  --black-dt: #1e2023;
+  --accet-green-dt: #14c57c;
+  --white-dt: #f0f0f0;
+  --charcoal-dt: #2a2d32;
+  --hover-charcoal-dt: #3b3f45;
+  --dark-accet-dt: #204136;
+  --hover-green-dt: #009156;
+  --error: #e74a3b;
 }
 
 /* Темна тема */
 .dark-theme {
-  --bg-color: var(--bg-color-dark);
-  --text-color: var(--text-color-dark);
-  --header-bg-color: var(--header-bg-color-dark);
+  --bg-color: var(--black-dt);
+  --text-color: var(--white-dt);
 }
 
 /* Основні стилі */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  --font-family: "Poppins", sans-serif;
-  --second-family: "Impact", sans-serif;
-  --third-family: "Montserrat", sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-family);
+  background-color: var(--white-dt);
+  color: var(--primary-color);
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 h1,
@@ -74,4 +77,58 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  .title {
+    font-size: 136px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .container {
+    width: 1280px;
+  }
 }
