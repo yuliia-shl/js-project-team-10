@@ -1,1 +1,55 @@
-<header class="header"></header>
+<header id="header">
+  <div class="header-container">
+    <div class="header-logo">
+      <h2>LLOYD<span class="header-logo-part">JEFFERSON</span>.</h2>
+    </div>
+    <button
+      id="theme-toggle"
+      class="theme-btn"
+      aria-label="Switch Theme"
+    ></button>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="#about">About me</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#contact">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="open-menu-btn" aria-label="Open menu">
+      <svg width="32" height="32">
+        <use href="/src/img/icon(2).svg"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<!--Mobile menu-->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="mobile-content">
+    <div class="mobile-header">
+      <h2>LLOYD<span class="mobile-header-logo-part">JEFFERSON</span>.</h2>
+      <button type="button" class="close-menu-btn" aria-label="Close menu">
+        &times;
+      </button>
+    </div>
+
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-nav-item">
+          <a href="#about">About me</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#contact">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
