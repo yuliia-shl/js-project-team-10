@@ -72,7 +72,8 @@
 
 .icon {
   margin-right: 10px;
-  fill: var(--accet-green);
+  stroke: var(--accet-green);
+  fill: none;
 }
 
 .contact-info a {

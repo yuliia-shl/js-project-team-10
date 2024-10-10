@@ -1,4 +1,4 @@
-const form = document.getElementById('contactForm');
+export const form = document.getElementById('contactForm');
 
 // Відправка форми та обробка відповіді сервера
 form.addEventListener('submit', function (event) {
