@@ -1,3 +1,5 @@
+@import url('./reset.css');
+
 /* =====   Section Work Together   ===== */
 
 #work-together {
@@ -8,23 +10,31 @@
   background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
   background-position: center; /* Зображення центруватиметься */
   background-repeat: no-repeat; /* Зображення не повторюватиметься */
+  /* margin: 0 auto; */
 }
 
 #work-together h2 {
+  color: var(--primary-color);
+  font-family: Impact, sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.23;
   margin-bottom: 40px;
   text-align: left;
+  text-transform: uppercase;
+}
 
-  #work-together .highlight {
-    color: var(--accet-green);
-  }
+#work-together .highlight {
+  color: var(--accet-green);
+}
 
-  #work-together p {
-    font-size: 16px;
-    color: var(--black);
-    margin-bottom: 20px;
-    line-height: 1.5;
-    max-width: 320px;
-  }
+#work-together p {
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 32px;
 }
 
 /* Контактна інформація */
@@ -34,8 +44,10 @@
 }
 
 .contact-info ul {
+  display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 16px;
 }
 
 .contact-info li {
@@ -51,17 +63,15 @@
   margin-bottom: 10px;
 }
 
-.contact-info .icon {
+/* .contact-info {
   width: 20px;
   height: 20px;
   display: inline-block;
-  fill: #333;
-}
+  
+} */
 
-.contact-info .icon svg {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
+.icon {
+  margin-right: 10px;
   fill: var(--accet-green);
 }
 
@@ -81,7 +91,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 32px;
 }
 
 #contactForm input,
@@ -125,7 +135,7 @@
 }
 
 #contactForm button:hover {
-  background-color: var(--hover-green);
+  background-color: var(--hover);
 }
 
 input:invalid {
