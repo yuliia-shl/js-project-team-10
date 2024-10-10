@@ -5,7 +5,7 @@
 #work-together {
   text-align: center;
   background-color: var(--bg-color-light);
-  background-image: url('../images/Decor-bg.jpg');
+  background-image: url('./img/Decor-bg.jpg');
   background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
   background-position: center; /* Зображення центруватиметься */
   background-repeat: no-repeat; /* Зображення не повторюватиметься */
@@ -121,7 +121,7 @@
   max-width: 400px;
   padding: 12px;
   background-color: var(--accet-green);
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -205,7 +205,7 @@ input:valid + .success-icon + .error-message {
 }
 
 .popup-content {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -242,10 +242,59 @@ input:valid + .success-icon + .error-message {
   background: none;
   border: none;
   font-size: 24px;
-  color: #888;
+  color: var(--black);
   cursor: pointer;
 }
 
 .close-btn:hover {
-  color: #333;
+  color: var(--light-grey);
+}
+
+/* =====   Dark theme   ==== */
+
+/* body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+} */
+
+body.dark-theme #work-together {
+  text-align: center;
+  background-color: var(--black);
+  background-image: url('./img/Decor-bg-dark.jpg');
+  background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
+  background-position: center; /* Зображення центруватиметься */
+  background-repeat: no-repeat; /* Зображення не повторюватиметься */
+  /* margin: 0 auto; */
+}
+
+body.dark-theme .input-wrapper input,
+body.dark-theme textarea {
+  background: var(--charcoal-dt);
+  color: var(--white);
+  border: none;
+}
+
+body.dark-theme .success-icon {
+  stroke: var(--accet-green-dt);
+}
+
+body.dark-theme .error-message {
+  color: var(--error);
+}
+
+body.dark-theme button {
+  background-color: var(--accet-green-dt);
+  color: var(--white);
+}
+
+body.dark-theme .popup-content p {
+  color: var(--white);
+}
+
+body.dark-theme .popup-content h3 {
+  color: var(--accet-green-dt);
+}
+
+body.dark-theme .close-btn {
+  color: var(--white);
 }
