@@ -1,0 +1,38 @@
+/* Footer */
+#footer {
+  padding-bottom: 0;
+}
+
+.footer-container {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e4e5e6;
+}
+
+.footer-title {
+  font-size: 32px;
+  font-family: var(--second-family);
+  margin-bottom: 32px;
+  text-align: start;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+s .footer-social-link {
+  font-weight: 300;
+}
+
+.footer-social-link:hover {
+  color: var(--accet-green);
+}
+
+.copyright {
+  font-weight: 300;
+  text-align: center;
+}
