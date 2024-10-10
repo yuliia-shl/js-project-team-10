@@ -102,7 +102,7 @@
   background-color: var(--light-grey);
 }
 
-input:invalid {
+#contactForm input:invalid {
   color: var(--error);
 }
 
