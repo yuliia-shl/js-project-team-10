@@ -3,7 +3,7 @@
   padding-bottom: 0;
 }
 
-.black-theme .footer-container {
+.footer-container {
   padding-top: 40px;
   padding-bottom: 24px;
   border-top: 1px solid #e4e5e6;
@@ -24,11 +24,7 @@
   margin-bottom: 40px;
 }
 
-.footer-sosial-item {
-  /* display: inline; */
-}
-
-.footer-social-link {
+s .footer-social-link {
   font-weight: 300;
 }
 
