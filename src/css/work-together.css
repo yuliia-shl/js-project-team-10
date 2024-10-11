@@ -13,6 +13,13 @@
   /* margin: 0 auto; */
 }
 
+@media screen and (min-width: 768px) {
+  #work-together {
+    text-align: center;
+    background-image: url('./img/Decor-bg-tab.jpg');
+  }
+}
+
 #work-together h2,
 #work-together p,
 .contact-info li,
@@ -38,6 +45,15 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  #work-together h2 {
+    font-size: 108px;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    margin-bottom: 60px;
+  }
+}
+
 #work-together .highlight {
   color: var(--accet-green);
 }
@@ -47,6 +63,15 @@
   margin-bottom: 20px;
   line-height: 1.5;
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  #work-together p {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    max-width: 488px;
+  }
 }
 
 /* Контактна інформація */
@@ -61,6 +86,13 @@
   flex-direction: column;
   align-items: start;
   gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info ul {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
 }
 
 .contact-info li {
@@ -101,14 +133,25 @@
 #contactForm textarea {
   width: 100%;
   max-width: 400px;
-  padding: 12px 15px;
+  padding: 16;
   border: 1px solid var(--hover-grey);
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   background-color: var(--light-grey);
+}
+
+@media screen and (min-width: 768px) {
+  #contactForm {
+    align-items: start;
+  }
+
+  #contactForm input,
+  #contactForm textarea {
+    max-width: 704px;
+  }
 }
 
 #contactForm input:invalid {
@@ -121,9 +164,9 @@
 }
 
 #contactForm button {
-  width: 100%;
+  /* width: 100%; */
   max-width: 400px;
-  padding: 12px;
+  padding: 12px 24px;
   background-color: var(--accet-green);
   color: var(--white);
   font-size: 16px;
@@ -133,9 +176,16 @@
   letter-spacing: 0.03em;
   text-align: center;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  #contactForm button {
+    max-width: 172px;
+    display: flex;
+  }
 }
 
 #contactForm button:hover {
@@ -174,7 +224,7 @@
   display: none;
 }
 
-input:valid+.success-icon {
+input:valid + .success-icon {
   display: block;
   border: 1px solid var(--hover-grey);
 }
@@ -194,15 +244,11 @@ textarea:valid {
   /* box-shadow: none; */
 }
 
-input:invalid+.success-icon {
+input:invalid + .success-icon {
   display: none;
 }
 
-input:invalid+.success-icon+.error-message {
-  display: block;
-}
-
-input:valid+.success-icon+.error-message {
+input:valid + .success-icon + .error-message {
   display: none;
 }
 
@@ -238,6 +284,13 @@ input:valid+.success-icon+.error-message {
   max-width: 320px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-content {
+    max-width: 492px;
+    padding: 64px;
+  }
 }
 
 .popup-content h3 {
@@ -292,6 +345,13 @@ body.dark-theme#work-together {
   /* margin: 0 auto; */
 }
 
+@media screen and (min-width: 768px) {
+  body.dark-theme#work-together {
+    text-align: center;
+    background-image: url('./img/Decor-bg-dark-tab.jpg');
+  }
+}
+
 body.dark-theme #work-together h2,
 body.dark-theme #work-together p,
 body.dark-theme .contact-info li,
@@ -321,6 +381,11 @@ body.dark-theme .error-message {
 
 body.dark-theme button {
   background-color: var(--accet-green-dt);
+}
+
+body.dark-theme .popup-content,
+body.dark-theme .close-btn {
+  background-color: var(--black-dt);
 }
 
 body.dark-theme .popup-content h3 {
