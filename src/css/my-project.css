@@ -1,0 +1,35 @@
+@import url('./reset.css');
+
+.subtitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+font-size: 32px;
+}
+.project-list {
+}
+.project-item {
+}
+.project-img {
+}
+.project-tech {
+    font-family: var(--font-family);
+font-weight: 300;
+font-size: 16px;
+}
+.project-btn {
+    font-family: var(--font-family);
+
+
+}
+.arrow {
+}
+.load-more {
+}
+.project-title {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+
