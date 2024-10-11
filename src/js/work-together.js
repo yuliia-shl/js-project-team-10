@@ -66,6 +66,8 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
+/*
+
 // Елементи для відкриття та закриття модального меню
 const menuToggle = document.getElementById('menuToggle');
 const modalMenu = document.getElementById('modalMenu');
@@ -87,3 +89,4 @@ modalMenu.addEventListener('click', event => {
     modalMenu.classList.remove('active');
   }
 });
+            */

@@ -140,6 +140,10 @@
   background-color: var(--hover);
 }
 
+#contactForm button:focus {
+  outline: none;
+}
+
 .input-wrapper {
   position: relative;
   width: 100%;
@@ -163,14 +167,19 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  stroke: var(--white);
+  /* stroke: var(--white); */
   fill: var(--accet-green);
   display: none;
 }
 
 input:valid + .success-icon {
   display: block;
+  border: 1px solid var(--hover-grey);
 }
+
+/* input:valid {
+  border: 1px solid var(--hover-grey);
+} */
 
 input:invalid + .success-icon {
   display: none;
