@@ -9,6 +9,10 @@
 @media screen and (min-width: 768px) {
   #work-together {
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--light-grey);
     background-image: url('./img/bg-work-tab.png');
   }
 }
