@@ -1,41 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Вибираємо елемент секції
   const techSkillsSection = document.querySelector('.tech-skills-section');
+  const marqueeContainerTop = document.querySelector('.tech-marquee-top');
+  const marqueeContainerBottom = document.querySelector('.tech-marquee-bottom');
 
-  const marqueeItems = document.querySelectorAll('.tech-marquee-item');
-
-  // Функція для запуску анімації
-  const startAnimation = () => {
-    marqueeItems.forEach(item => {
-      item.classList.add('animation-running');
-      item.classList.remove('animation-paused');
-    });
+  // Копіюємо елементи для дублювання
+  const cloneMarqueeItems = container => {
+    const items = container.innerHTML;
+    container.innerHTML += items;
   };
 
-  // Функція для зупинки анімації
-  const stopAnimation = () => {
-    marqueeItems.forEach(item => {
-      item.classList.add('animation-paused');
-      item.classList.remove('animation-running');
-    });
+  // Викликаємо дублювання для обох контейнерів
+  cloneMarqueeItems(marqueeContainerTop);
+  cloneMarqueeItems(marqueeContainerBottom);
+
+  // Запускаємо анімацію
+  let marqueeSpeed = 1; // Швидкість анімації
+  let positionTop = 0;
+  let positionBottom = 0;
+
+  const animateMarquee = () => {
+    positionTop -= marqueeSpeed;
+    positionBottom += marqueeSpeed;
+
+    // Якщо закінчується перший контейнер
+    if (Math.abs(positionTop) >= marqueeContainerTop.scrollWidth / 2) {
+      positionTop = 0;
+    }
+
+    // Якщо закінчується другий контейнер
+    if (Math.abs(positionBottom) >= marqueeContainerBottom.scrollWidth / 2) {
+      positionBottom = 0;
+    }
+
+    marqueeContainerTop.style.transform = `translateX(${positionTop}px)`;
+    marqueeContainerBottom.style.transform = `translateX(${positionBottom}px)`;
+
+    requestAnimationFrame(animateMarquee);
   };
 
-  // Використовую Intersection Observer для моніторингу секції
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          startAnimation(); // Запускаю анімацію, коли секція у в'юпорті
-        } else {
-          stopAnimation(); // Зупиняю анімацію, коли секція виходить з в'юпорту
-        }
-      });
-    },
-    { threshold: 0.1 } // Запускати, коли секція на 10% у в'юпорті
-  );
-
-  // Стежимо за секцією
-  if (techSkillsSection) {
-    observer.observe(techSkillsSection);
-  }
+  // Запускаємо анімацію
+  animateMarquee();
 });
