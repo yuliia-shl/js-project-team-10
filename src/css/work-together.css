@@ -261,12 +261,20 @@ input:valid + .success-icon + .error-message {
 
 body.dark-theme #work-together {
   text-align: center;
-  background-color: var(--black);
+  background-color: var(--black-dt);
   background-image: url('./img/Decor-bg-dark.jpg');
   background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
   background-position: center; /* Зображення центруватиметься */
   background-repeat: no-repeat; /* Зображення не повторюватиметься */
   /* margin: 0 auto; */
+}
+
+body.dark-theme #work-together h2 {
+  color: var(--white-dt);
+}
+
+body.dark-theme #work-together p {
+  color: var(--white-dt);
 }
 
 body.dark-theme .input-wrapper input,
