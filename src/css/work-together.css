@@ -4,16 +4,29 @@
 
 #work-together {
   text-align: center;
-  background-color: var(--bg-color-light);
   background-image: url('./img/Decor-bg.jpg');
   background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
   background-position: center; /* Зображення центруватиметься */
   background-repeat: no-repeat; /* Зображення не повторюватиметься */
+  background-color: var();
   /* margin: 0 auto; */
 }
 
-#work-together h2 {
+#work-together h2,
+#work-together p,
+.contact-info li,
+.contact-info a,
+#contactForm input,
+#contactForm textarea,
+#contactForm input::placeholder,
+#contactForm textarea::placeholder,
+.uppercase,
+.popup-content p,
+.close-btn {
   color: var(--black);
+}
+
+#work-together h2 {
   font-family: var(--second-family);
   font-size: 52px;
   font-weight: 400;
@@ -30,7 +43,6 @@
 
 #work-together p {
   font-size: 18px;
-  color: var(--black);
   margin-bottom: 20px;
   line-height: 1.5;
   margin-bottom: 32px;
@@ -54,7 +66,6 @@
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.5;
-  color: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +78,6 @@
 }
 
 .contact-info a {
-  color: var(--black);
   text-decoration: none;
   font-size: 16px;
 }
@@ -96,17 +106,11 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
   background-color: var(--light-grey);
 }
 
 #contactForm input:invalid {
   color: var(--error);
-}
-
-#contactForm input::placeholder,
-#contactForm textarea::placeholder {
-  color: var(--black);
 }
 
 #contactForm textarea {
@@ -186,7 +190,6 @@ input:valid + .success-icon + .error-message {
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
   max-width: 320px;
   text-align: left;
   margin-bottom: 32px;
@@ -232,7 +235,6 @@ input:valid + .success-icon + .error-message {
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--black);
 }
 
 .close-btn {
@@ -244,7 +246,6 @@ input:valid + .success-icon + .error-message {
   width: 24px;
   height: 24px;
   font-size: 32px;
-  color: var(--black);
   cursor: pointer;
 }
 
@@ -254,14 +255,8 @@ input:valid + .success-icon + .error-message {
 
 /* =====   Dark theme   ==== */
 
-/* body.dark-theme {
-  background-color: #1a1a1a;
-  color: #ffffff;
-} */
-
-body.dark-theme #work-together {
+body.dark-theme#work-together {
   text-align: center;
-  background-color: var(--black-dt);
   background-image: url('./img/Decor-bg-dark.jpg');
   background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
   background-position: center; /* Зображення центруватиметься */
@@ -269,18 +264,22 @@ body.dark-theme #work-together {
   /* margin: 0 auto; */
 }
 
-body.dark-theme #work-together h2 {
+body.dark-theme #work-together h2,
+body.dark-theme #work-together p,
+body.dark-theme .contact-info li,
+body.dark-theme .contact-info a,
+body.dark-theme #contactForm,
+body.dark-theme #contactForm input::placeholder,
+body.dark-theme #contactForm textarea::placeholder,
+body.dark-theme button,
+body.dark-theme .popup-content p,
+body.dark-theme .close-btn {
   color: var(--white-dt);
 }
 
-body.dark-theme #work-together p {
-  color: var(--white-dt);
-}
-
-body.dark-theme .input-wrapper input,
-body.dark-theme textarea {
-  background: var(--charcoal-dt);
-  color: var(--white);
+body.dark-theme #contactForm .input-wrapper input,
+body.dark-theme #contactForm textarea {
+  background-color: var(--charcoal-dt);
   border: none;
 }
 
@@ -294,17 +293,8 @@ body.dark-theme .error-message {
 
 body.dark-theme button {
   background-color: var(--accet-green-dt);
-  color: var(--white);
-}
-
-body.dark-theme .popup-content p {
-  color: var(--white);
 }
 
 body.dark-theme .popup-content h3 {
   color: var(--accet-green-dt);
-}
-
-body.dark-theme .close-btn {
-  color: var(--white);
 }
