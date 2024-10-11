@@ -60,6 +60,8 @@ height: 48px;
   
   .arrow {
     margin-left: 8px;
+    stroke-width: 2px;
+    stroke: #00b068;
   }
   
   .load-more {
