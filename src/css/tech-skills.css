@@ -120,7 +120,7 @@
 }
 
 /* Стиль для темної теми */
-.tech-icon-top.dark-theme {
+.tech-icon-top.dark-theme-v {
  fill: #14c57c;
  transform: rotate(-180deg);
 }
@@ -134,7 +134,7 @@
   transition: background-color 0.3s ease, fill 0.3s ease; /* Плавний перехід кольорів */
 }
 
-.tech-icon-bottom.dark-theme {
+.tech-icon-bottom.dark-theme-v {
 fill: #f0f0f0;
 transform: rotate(-180deg);
 }
