@@ -50,7 +50,7 @@
 
 /* Контактна інформація */
 .contact-info {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-style: normal; /* Відміняємо курсив для тега <address> */
 }
 
@@ -177,9 +177,17 @@ input:valid + .success-icon {
   border: 1px solid var(--hover-grey);
 }
 
-/* input:valid {
-  border: 1px solid var(--hover-grey);
-} */
+input:valid {
+  outline: none;
+  border-color: var(--hover-grey); /* або замініть на бажаний колір */
+  box-shadow: none;
+}
+
+textarea:valid {
+  outline: none;
+  border-color: var(--hover-grey); /* або замініть на бажаний колір */
+  /* box-shadow: none; */
+}
 
 input:invalid + .success-icon {
   display: none;
