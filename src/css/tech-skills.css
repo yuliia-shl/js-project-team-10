@@ -95,8 +95,8 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #292929;
+  /* font-family: "Poppins", sans-serif; */
+  /* color: #292929; */
   /* color: #f0f0f0; *//*Для чорної теми*/
   margin: 0 8px; /* Відстань між текстом і іконкою */
   white-space: nowrap;
@@ -128,7 +128,7 @@
   height: 24px;
   fill: #00b068;
   transform: rotate(-180deg);
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: fill 0.3s ease; /* Плавний перехід кольору */
 }
 
