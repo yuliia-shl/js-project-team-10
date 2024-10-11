@@ -1,13 +1,14 @@
-@import url('./reset.css');
-
 /* =====   Section Work Together   ===== */
 
 #work-together {
   text-align: center;
   background-image: url('./img/Decor-bg.jpg');
-  background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
-  background-position: center; /* Зображення центруватиметься */
-  background-repeat: no-repeat; /* Зображення не повторюватиметься */
+  background-size: cover;
+  /* Зображення масштабуватиметься, щоб покрити всю секцію */
+  background-position: center;
+  /* Зображення центруватиметься */
+  background-repeat: no-repeat;
+  /* Зображення не повторюватиметься */
   background-color: var();
   /* margin: 0 auto; */
 }
@@ -51,7 +52,8 @@
 /* Контактна інформація */
 .contact-info {
   margin-bottom: 40px;
-  font-style: normal; /* Відміняємо курсив для тега <address> */
+  font-style: normal;
+  /* Відміняємо курсив для тега <address> */
 }
 
 .contact-info ul {
@@ -172,33 +174,35 @@
   display: none;
 }
 
-input:valid + .success-icon {
+input:valid+.success-icon {
   display: block;
   border: 1px solid var(--hover-grey);
 }
 
 input:valid {
   outline: none;
-  border-color: var(--hover-grey); /* або замініть на бажаний колір */
+  border-color: var(--hover-grey);
+  /* або замініть на бажаний колір */
   box-shadow: none;
   background-color: var(--light-grey);
 }
 
 textarea:valid {
   outline: none;
-  border-color: var(--hover-grey); /* або замініть на бажаний колір */
+  border-color: var(--hover-grey);
+  /* або замініть на бажаний колір */
   /* box-shadow: none; */
 }
 
-input:invalid + .success-icon {
+input:invalid+.success-icon {
   display: none;
 }
 
-input:invalid + .success-icon + .error-message {
+input:invalid+.success-icon+.error-message {
   display: block;
 }
 
-input:valid + .success-icon + .error-message {
+input:valid+.success-icon+.error-message {
   display: none;
 }
 
@@ -279,9 +283,12 @@ input:valid + .success-icon + .error-message {
 body.dark-theme#work-together {
   text-align: center;
   background-image: url('./img/Decor-bg-dark.jpg');
-  background-size: cover; /* Зображення масштабуватиметься, щоб покрити всю секцію */
-  background-position: center; /* Зображення центруватиметься */
-  background-repeat: no-repeat; /* Зображення не повторюватиметься */
+  background-size: cover;
+  /* Зображення масштабуватиметься, щоб покрити всю секцію */
+  background-position: center;
+  /* Зображення центруватиметься */
+  background-repeat: no-repeat;
+  /* Зображення не повторюватиметься */
   /* margin: 0 auto; */
 }
 
