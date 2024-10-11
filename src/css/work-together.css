@@ -2,21 +2,14 @@
 
 #work-together {
   text-align: center;
-  background-image: url('./img/Decor-bg.jpg');
-  background-size: cover;
-  /* Зображення масштабуватиметься, щоб покрити всю секцію */
-  background-position: center;
-  /* Зображення центруватиметься */
-  background-repeat: no-repeat;
-  /* Зображення не повторюватиметься */
-  background-color: var();
+  background-color: inherit;
   /* margin: 0 auto; */
 }
 
 @media screen and (min-width: 768px) {
   #work-together {
     text-align: center;
-    background-image: url('./img/Decor-bg-tab.jpg');
+    background-image: url('./img/bg-work-tab.jpg');
   }
 }
 
@@ -333,61 +326,52 @@ input:valid + .success-icon + .error-message {
 
 /* =====   Dark theme   ==== */
 
-body.dark-theme#work-together {
-  text-align: center;
-  background-image: url('./img/Decor-bg-dark.jpg');
-  background-size: cover;
-  /* Зображення масштабуватиметься, щоб покрити всю секцію */
-  background-position: center;
-  /* Зображення центруватиметься */
-  background-repeat: no-repeat;
-  /* Зображення не повторюватиметься */
-  /* margin: 0 auto; */
+.dark-theme#work-together {
+  background-color: inherit;
 }
 
 @media screen and (min-width: 768px) {
-  body.dark-theme#work-together {
-    text-align: center;
-    background-image: url('./img/Decor-bg-dark-tab.jpg');
+  .dark-theme#work-together {
+    background-image: url('./img/bg-work-tab.jpg');
   }
 }
 
-body.dark-theme #work-together h2,
-body.dark-theme #work-together p,
-body.dark-theme .contact-info li,
-body.dark-theme .contact-info a,
-body.dark-theme #contactForm,
-body.dark-theme #contactForm input::placeholder,
-body.dark-theme #contactForm textarea::placeholder,
-body.dark-theme button,
-body.dark-theme .popup-content p,
-body.dark-theme .close-btn {
+.dark-theme #work-together p,
+.dark-theme #work-together h2,
+.dark-theme .contact-info li,
+.dark-theme .contact-info a,
+.dark-theme #contactForm,
+.dark-theme #contactForm input::placeholder,
+.dark-theme #contactForm textarea::placeholder,
+.dark-theme button,
+.dark-theme .popup-content p,
+.dark-theme .close-btn {
   color: var(--white-dt);
 }
 
-body.dark-theme #contactForm .input-wrapper input,
-body.dark-theme #contactForm textarea {
+.dark-theme #contactForm .input-wrapper input,
+.dark-theme #contactForm textarea {
   background-color: var(--charcoal-dt);
   border: none;
 }
 
-body.dark-theme .success-icon {
+.dark-theme .success-icon {
   stroke: var(--accet-green-dt);
 }
 
-body.dark-theme .error-message {
+.dark-theme .error-message {
   color: var(--error);
 }
 
-body.dark-theme button {
+.dark-theme button {
   background-color: var(--accet-green-dt);
 }
 
-body.dark-theme .popup-content,
-body.dark-theme .close-btn {
+.dark-theme .popup-content,
+.dark-theme .close-btn {
   background-color: var(--black-dt);
 }
 
-body.dark-theme .popup-content h3 {
+.dark-theme .popup-content h3 {
   color: var(--accet-green-dt);
 }
