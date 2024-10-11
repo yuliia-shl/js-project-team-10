@@ -56,6 +56,7 @@
 .tech-marquee-top {
   /* background: #204136; *//*Для чорної теми*/
   background: #bcdfd1;
+  z-index: 2;
 }
 
 /* .dark-theme.tech-marquee-top {
