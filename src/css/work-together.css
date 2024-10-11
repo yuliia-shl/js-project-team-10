@@ -256,6 +256,9 @@ input:valid + .success-icon + .error-message {
 }
 
 .close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 16px;
   right: 16px;
