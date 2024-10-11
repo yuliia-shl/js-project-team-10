@@ -29,11 +29,6 @@
   --error: #e74a3b;
 }
 
-/* Темна тема */
-.dark-theme {
-  --bg-color: var(--black-dt);
-  --text-color: var(--white-dt);
-}
 
 /* Основні стилі */
 body {
@@ -42,6 +37,12 @@ body {
   color: var(--black);
   line-height: 1.5;
   letter-spacing: 0.03em;
+}
+
+/* Темна тема */
+.dark-theme {
+  background-color: var(--black-dt);
+  color: var(--white-dt);
 }
 
 h1,
@@ -100,6 +101,10 @@ img {
 
 .highlight {
   color: var(--accet-green);
+}
+
+.dark-theme .highlight {
+  color: var(--accet-green-dt);
 }
 
 @media screen and (min-width: 360px) {
