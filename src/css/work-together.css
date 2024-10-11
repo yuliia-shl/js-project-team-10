@@ -181,6 +181,7 @@ input:valid {
   outline: none;
   border-color: var(--hover-grey); /* або замініть на бажаний колір */
   box-shadow: none;
+  background-color: var(--light-grey);
 }
 
 textarea:valid {
