@@ -9,7 +9,7 @@
 @media screen and (min-width: 768px) {
   #work-together {
     text-align: center;
-    background-image: url('./img/bg-work-tab.jpg');
+    background-image: url('./img/bg-work-tab.png');
   }
 }
 
@@ -331,8 +331,8 @@ input:valid + .success-icon + .error-message {
 }
 
 @media screen and (min-width: 768px) {
-  .dark-theme#work-together {
-    background-image: url('./img/bg-work-tab.jpg');
+  .dark-theme #work-together {
+    background-image: url('./img/bg-work-tab.png');
   }
 }
 
