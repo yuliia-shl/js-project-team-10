@@ -109,6 +109,36 @@
   transform: rotate(-180deg);
 }
 
+/* Основний стиль іконки */
+.tech-icon-top {
+  width: 24px;
+  height: 24px;
+  fill: #00b068;
+  transform: rotate(-180deg);
+  cursor: pointer;
+  transition: fill 0.3s ease; /* Плавний перехід кольору */
+}
+
+/* Стиль для темної теми */
+.tech-icon-top.dark-theme {
+ fill: #14c57c;
+ transform: rotate(-180deg);
+}
+
+.tech-icon-bottom {
+  width: 24px;
+  height: 24px;
+  fill: #292929; /* Білий фон */
+  transform: rotate(-180deg);
+  cursor: pointer;
+  transition: background-color 0.3s ease, fill 0.3s ease; /* Плавний перехід кольорів */
+}
+
+.tech-icon-bottom.dark-theme {
+fill: #f0f0f0;
+transform: rotate(-180deg);
+}
+
 @keyframes tech-scrollLeft {
   0% {
     transform: translateX(0);
