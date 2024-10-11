@@ -1,8 +1,7 @@
 .hero-container {
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 56px;
     background-image: url(/img/hero-mob.png);
-    background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 16px;
 }
@@ -11,7 +10,6 @@
     font-size: 64px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: #292929;
     margin-bottom: 40px;
 }
 
@@ -48,14 +46,13 @@
     transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
 }
 
-.hero-btn-placeholder:hover {
+.hero-btn-wrap:hover .hero-btn-placeholder {
     background-color: var(--accet-green);
 }
 
 .hero-text {
     font-size: 18px;
     text-transform: uppercase;
-    margin-bottom: 72px;
 }
 
 .hero-social-wrap {
