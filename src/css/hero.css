@@ -1,7 +1,10 @@
+#hero {
+    padding-top: 16px;
+}
 .hero-container {
     padding-top: 96px;
     padding-bottom: 56px;
-    background-image: url(/img/hero-mob.png);
+    background-image: url(/img/decor-bg-8_1x.png);
     background-repeat: no-repeat;
     margin-bottom: 16px;
 }
