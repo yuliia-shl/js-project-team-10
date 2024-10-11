@@ -1,11 +1,13 @@
 #hero {
     padding-top: 16px;
 }
+
 .hero-container {
     padding-top: 96px;
     padding-bottom: 56px;
-    background-image: url(/img/decor-bg-8_1x.png);
+    background-image: url(/img/bg-mob.png);
     background-repeat: no-repeat;
+    /* background-size: cover; */
     margin-bottom: 16px;
 }
 
@@ -80,3 +82,43 @@
 .hero-social-link:hover {
     color: var(--accet-green);
 }
+
+@media screen and (min-width: 768px) {
+    .hero-container {
+    padding-top: 72px;
+    padding-bottom: 64px;
+    background-image: url(/img/bg-hero-tab.png);
+    }
+
+    .hero-title {
+        font-size: 136px;
+        letter-spacing: 0.01em;
+        margin-bottom: 60px;
+        }
+        
+    .hero-btn-text {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-right: -94px;
+    }
+
+    .hero-btn-placeholder {
+        width: 261px;
+        height: 96px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .hero-social-wrap {
+        padding: 40px 0;
+    }
+
+    .hero-social-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
