@@ -1,4 +1,6 @@
 export const form = document.getElementById('contactForm');
+export const emailInput = document.getElementById('email');
+export const errorMessage = document.querySelector('.error-message');
 
 // Відправка форми та обробка відповіді сервера
 form.addEventListener('submit', function (event) {
@@ -63,6 +65,15 @@ document.addEventListener('keydown', function (event) {
     document.querySelectorAll('.popup').forEach(popup => {
       popup.style.display = 'none';
     });
+  }
+});
+
+/* =====   invalid   ===== */
+emailInput.addEventListener('input', function () {
+  if (emailInput.validity.valid) {
+    errorMessage.style.display = 'none';
+  } else {
+    errorMessage.style.display = 'block';
   }
 });
 
