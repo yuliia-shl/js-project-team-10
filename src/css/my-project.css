@@ -114,6 +114,8 @@ height: 48px;
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
     }
+
+    
   }
   
   @media (min-width: 1280px) {
