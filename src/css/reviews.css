@@ -1,0 +1,50 @@
+.reviews .container {
+width: 100%;
+max-width: 375px;
+min-width: 320px;
+box-sizing: border-box;
+background-color: #fbfbfb;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.reviews-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    text-align: center;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: black;
+    margin: 0px 83px 40px 83px;
+}
+
+.reviews-list {
+
+}
+
+.reviews-list-item {
+    border-radius: 16px;
+    background-color: #d3d3d3;
+    padding: 32px 36px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.reviews-list-paragraph {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: black;
+}
+
+.reviews-list-name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: black;
+}
