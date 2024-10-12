@@ -12,7 +12,7 @@
   .project-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
   }
 
 
@@ -26,7 +26,7 @@ width: 320px;
   
   .project-img {
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
   
   .project-tech {
@@ -35,7 +35,7 @@ width: 320px;
     font-weight: 300;
     font-size: 14px;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   
   .project-subtitle {
@@ -43,11 +43,10 @@ width: 320px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   .project-btn {
-    margin-bottom: 40px;
     margin-left: 195px;
     border-radius: 8px;
 padding: 12px 24px;
@@ -83,6 +82,8 @@ height: 48px;
     border-radius: 5px;
     font-weight: 400;
     margin-left: 83px;
+    margin-top: 52px;
+
   }
   
   .load-more::after {
