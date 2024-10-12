@@ -15,6 +15,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .lwt-container {
+    display: flex;
+  }
+}
+
 /* .uppercase, */
 .popup-content p,
 .close-btn {
@@ -49,6 +55,7 @@
   font-size: 18px;
   margin-bottom: 20px;
   line-height: 1.5;
+  text-align: left;
   margin-bottom: 32px;
 }
 
@@ -79,6 +86,13 @@
   .contact-info ul {
     flex-direction: row;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-info ul {
+    flex-direction: column;
+    margin-bottom: 120px;
   }
 }
 
@@ -243,17 +257,6 @@ input:invalid + .success-icon {
 
 input:valid + .success-icon + .error-message {
   display: none;
-}
-
-.uppercase {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  max-width: 320px;
-  text-align: left;
-  margin-bottom: 32px;
 }
 
 /* Попап */
