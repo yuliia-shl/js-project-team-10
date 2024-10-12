@@ -209,13 +209,13 @@
   /* stroke: var(--white); */
   fill: var(--accet-green);
   display: none;
-  border: none;
 }
 
 input:valid + .success-icon {
   display: block;
   border: 1px solid var(--accet-green);
   background-color: var(--light-grey);
+  border: none;
 }
 
 input:valid {
@@ -337,7 +337,8 @@ input:valid + .success-icon + .error-message {
 }
 
 .dark-theme #contactForm input,
-.dark-theme #contactForm .input-wrapper input:valid,
+.dark-theme .input-wrapper .success-icon,
+.dark-theme #contactForm input:valid,
 .dark-theme #contactForm textarea {
   background-color: var(--charcoal-dt);
   border: none;
@@ -357,7 +358,7 @@ input:valid + .success-icon + .error-message {
 }
 
 .dark-theme .popup-content,
-.dark-theme #contactForm input:valid,
+.dark-theme #contactForm input:valid + .success-icon,
 .dark-theme .close-btn {
   background-color: var(--black-dt);
 }
