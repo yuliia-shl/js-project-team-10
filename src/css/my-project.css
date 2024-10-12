@@ -1,8 +1,9 @@
 
 .project-title {
-    text-align: center;
+  display: flex;
+  justify-content: center;
     margin-bottom: 40px;
-  }
+}
 
   .project-list {
     display: grid;
@@ -76,7 +77,7 @@ height: 48px;
   .load-more {
     display: inline-block;
     position: relative;
-    padding: 10px 20px;
+    padding-top: 10px;
     background-color: transparent;
     text-transform: uppercase;
     font-size: 18px;
@@ -84,7 +85,7 @@ height: 48px;
     border: none;
     border-radius: 5px;
     font-weight: 400;
-    margin-left: 83px;
+    margin-left: 103px;
 
   }
   
