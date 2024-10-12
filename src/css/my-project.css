@@ -26,7 +26,7 @@ width: 320px;
   
   .project-img {
     border-radius: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
   
   .project-tech {
@@ -47,7 +47,7 @@ width: 320px;
   }
   
   .project-btn {
-    margin-left: 195px;
+    align-self: flex-end;
     border-radius: 8px;
 padding: 12px 24px;
 width: 125px;
@@ -58,6 +58,14 @@ height: 48px;
     background-color: var(--light-grey);
     font-size: 16px;
     text-transform: uppercase;
+  }
+
+  .project-btn:last-child {
+     margin-bottom: 52px;
+  }
+
+  .project-btn:last-child {
+    margin-bottom: 52px;
   }
 
   .project-btn:hover {
@@ -82,7 +90,6 @@ height: 48px;
     border-radius: 5px;
     font-weight: 400;
     margin-left: 83px;
-    margin-top: 52px;
 
   }
   
@@ -108,11 +115,11 @@ height: 48px;
     color: var(--accet-green);
 
   }
+
+
+
   
   @media (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
   
     .project-list {
       grid-template-columns: repeat(2, 1fr);
