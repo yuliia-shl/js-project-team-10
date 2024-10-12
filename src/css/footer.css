@@ -86,6 +86,11 @@
   .footer-social-list {
     margin-bottom: 0;
   }
+
+  .footer-social-link {
+    display: inline-block;
+    padding: 4px 0;
+  }
 }
 
 /* Dark theme styles */
