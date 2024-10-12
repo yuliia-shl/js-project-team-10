@@ -40,14 +40,6 @@
   font-style: normal;
 }
 
-/* Montserrat Regular, Bold, SemiBold*/
-@font-face {
-  font-family: 'Montserrat';
-  src: url(./fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
-  font-weight: 400 700;
-  font-style: normal;
-}
-
 /* Загальні стилі */
 * {
   margin: 0;
