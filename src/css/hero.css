@@ -5,7 +5,7 @@
 .hero-container {
     padding-top: 96px;
     padding-bottom: 56px;
-    background-image: url(/img/bg-mob.png);
+    background-image: url(/img/bg-hero-mob_1x.png);
     background-repeat: no-repeat;
     margin-bottom: 16px;
 }
@@ -56,6 +56,7 @@
 
 .hero-text {
     font-size: 18px;
+    line-height: 1.56;
     text-transform: uppercase;
 }
 
@@ -84,15 +85,17 @@
 
 @media screen and (min-width: 768px) {
     .hero-container {
-    padding-top: 72px;
-    padding-bottom: 64px;
-    background-image: url(/img/bg-hero-tab.png);
+        padding-top: 72px;
+        padding-bottom: 64px;
+        background-image: url(/img/bg-hero-tab_1x.png);
     }
 
     .hero-title {
         font-size: 136px;
         letter-spacing: 0.01em;
+        line-height: 1.15;
         margin-bottom: 60px;
+
         }
         
     .hero-btn-text {
