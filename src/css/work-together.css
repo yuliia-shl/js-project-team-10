@@ -327,7 +327,7 @@ input:valid + .success-icon + .error-message {
 
 .dark-theme #contactForm input,
 .dark-theme #contactForm input:valid,
-/* .dark-theme #contactForm textarea, */
+.dark-theme #contactForm textarea,
 .dark-theme #contactForm input::placeholder,
 .dark-theme #contactForm textarea::placeholder,
 .dark-theme button,
