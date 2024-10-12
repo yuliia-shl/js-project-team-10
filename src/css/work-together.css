@@ -1,0 +1,373 @@
+/* =====   Section Work Together   ===== */
+
+#work-together {
+  text-align: center;
+  background-color: inherit;
+  /* margin: 0 auto; */
+}
+
+@media screen and (min-width: 768px) {
+  #work-together {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./img/bg-work-tab.png');
+  }
+}
+
+/* .uppercase, */
+.popup-content p,
+.close-btn {
+  color: var(--black);
+}
+
+#work-together h2 {
+  font-family: var(--second-family);
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.23;
+  margin-bottom: 40px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  #work-together h2 {
+    font-size: 108px;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    margin-bottom: 60px;
+  }
+}
+
+#work-together .highlight {
+  color: var(--accet-green);
+}
+
+#work-together p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  #work-together p {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    max-width: 488px;
+  }
+}
+
+/* Контактна інформація */
+.contact-info {
+  margin-bottom: 40px;
+  font-style: normal;
+  /* Відміняємо курсив для тега <address> */
+}
+
+.contact-info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info ul {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+}
+
+.contact-info li {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 16px;
+  stroke: var(--accet-green);
+  fill: none;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--accet-green);
+  text-decoration: none;
+}
+
+/* Стилізація форми */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  border: 1px solid var(--hover-grey);
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  background-color: var(--light-grey);
+}
+
+@media screen and (min-width: 768px) {
+  #contactForm {
+    align-items: start;
+  }
+
+  #contactForm input,
+  #contactForm textarea {
+    max-width: 704px;
+  }
+}
+
+#contactForm input:invalid {
+  color: var(--error);
+}
+
+#contactForm textarea {
+  height: 120px;
+  resize: none;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: var(--black);
+}
+#contactForm button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 24px;
+  background-color: var(--accet-green);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  #contactForm button {
+    max-width: 172px;
+    display: flex;
+  }
+}
+
+#contactForm button:hover {
+  background-color: var(--hover);
+}
+
+#contactForm button:focus {
+  outline: none;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.error-message {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--error);
+  display: none;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.success-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* stroke: var(--white); */
+  fill: var(--accet-green);
+  display: none;
+}
+
+input:valid + .success-icon {
+  display: block;
+  border: 1px solid var(--accet-green);
+  border: none;
+  background-color: var(--light-grey);
+}
+
+input:valid {
+  outline: none;
+  border-color: var(--hover-grey);
+  box-shadow: none;
+  background-color: var(--light-grey);
+}
+
+textarea:valid {
+  outline: none;
+  border-color: var(--hover-grey);
+  /* або замініть на бажаний колір */
+  /* box-shadow: none; */
+}
+
+input:invalid + .success-icon {
+  display: none;
+}
+
+input:valid + .success-icon + .error-message {
+  display: none;
+}
+
+.uppercase {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  max-width: 320px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+/* Попап */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: var(--white);
+  padding: 48px 32px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-content {
+    max-width: 492px;
+    padding: 64px;
+  }
+}
+
+.popup-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accet-green);
+  margin-bottom: 16px;
+}
+
+.popup-content p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: var(--light-grey);
+}
+
+/* =====   Dark theme   ==== */
+
+.dark-theme #work-together {
+  background-color: inherit;
+}
+
+.dark-theme #contactForm input,
+.dark-theme #contactForm input:valid,
+.dark-theme #contactForm textarea,
+.dark-theme #contactForm input::placeholder,
+.dark-theme #contactForm textarea::placeholder,
+.dark-theme button,
+.dark-theme .popup-content p,
+.dark-theme .close-btn {
+  color: var(--white-dt);
+}
+
+.dark-theme #contactForm input,
+.dark-theme .input-wrapper .success-icon,
+.dark-theme #contactForm .input-wrapper input:valid,
+.dark-theme #contactForm textarea {
+  background-color: var(--charcoal-dt);
+  border: none;
+}
+
+.dark-theme .success-icon {
+  stroke: var(--accet-green-dt);
+}
+
+.dark-theme .error-message,
+.dark-theme #contactForm .input-wrapper input:invalid {
+  color: var(--error);
+}
+
+.dark-theme button {
+  background-color: var(--accet-green-dt);
+}
+
+.dark-theme .popup-content,
+.dark-theme #contactForm input:valid + .success-icon,
+.dark-theme .close-btn {
+  background-color: var(--black-dt);
+}
+
+.dark-theme .popup-content h3 {
+  color: var(--accet-green-dt);
+}
