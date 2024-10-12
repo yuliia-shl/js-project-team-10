@@ -2,6 +2,12 @@
     margin-bottom: 40px;
 }
 
+.photo-box {
+    width: 320px;
+height: 374px;
+border-radius: 16px;
+} 
+
 .photo {
     width: 320px;
 height: 374px;
@@ -27,10 +33,13 @@ text-transform: uppercase;
     text-align: left;
     margin-bottom: 24px;
 }
-
-.about-me-box {
-    margin-bottom: 40px;
+.about-me-info-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+
+
 
 .about-me-list {
     padding: 0;
