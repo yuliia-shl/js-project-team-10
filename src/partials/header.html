@@ -1,53 +1,65 @@
-<header id="header">
-  <div class="header-container">
-    <div class="header-logo">
-      <h2>LLOYD<span class="header-logo-part">JEFFERSON</span>.</h2>
+<header class="header">
+  <div class="header-section container" id="header">
+    <a class="header-logo" href="#top"
+      >Lloyd<span class="header-logo-tech">Jefferson.</span></a
+    >
+    <div class="icon-conrainer">
+      <div class="switch_container">
+        <input type="checkbox" id="switch" />
+        <label for="switch" class="label">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </label>
+      </div>
     </div>
-    <button
-      id="theme-toggle"
-      class="theme-btn"
-      aria-label="Switch Theme"
-    ></button>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a href="#about">About me</a>
+    <nav class="header-navigation">
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link" href="#about-me">About me</a>
         </li>
-        <li class="navigation-item">
-          <a href="#projects">Projects</a>
+        <li class="header-item">
+          <a class="header-link" href="#my-projects">Projects</a>
         </li>
-        <li class="navigation-item">
-          <a href="#contact">Contacts</a>
+        <li class="header-item">
+          <a class="header-link" href="#work-together">Contacts</a>
         </li>
       </ul>
     </nav>
-    <button type="button" class="open-menu-btn" aria-label="Open menu">
-      <svg width="32" height="32">
-        <use href="/src/img/icon(2).svg"></use>
+    <button
+      class="header-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="header-btn-icon" width="32" height="32">
+        <use href="../img/icons.svg#icon-burger-menu"></use>
       </svg>
     </button>
   </div>
 </header>
-<!--Mobile menu-->
-<div id="mobileMenu" class="mobile-menu">
-  <div class="mobile-content">
-    <div class="mobile-header">
-      <h2>LLOYD<span class="mobile-header-logo-part">JEFFERSON</span>.</h2>
-      <button type="button" class="close-menu-btn" aria-label="Close menu">
-        &times;
-      </button>
+<!-- Mobile menu -->
+<div class="header-mobile-menu-container js-menu-container" id="mobile-menu">
+  <div class="header-mobile-menu">
+    <div class="header-logo-container">
+      <a class="header-mobile-logo" href="#top"
+        >Lloyd<span class="header-mobile-logo-tech">Jefferson.</span></a
+      >
     </div>
-
-    <nav class="mobile-menu-nav">
-      <ul class="mobile-menu-nav-list">
-        <li class="mobile-menu-nav-item">
-          <a href="#about">About me</a>
+    <button class="header-mobile-menu-close js-close-menu">
+      X<svg width="32" height="32" class="header-mobile-menu-close-icon">
+        <use href="../img/icons.svg#X"></use>
+      </svg>
+    </button>
+    <nav class="header-mobile-navigation">
+      <ul class="header-mobile-list">
+        <li class="header-mobile-item">
+          <a class="header-mobile-link" href="#about-me">About me</a>
         </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#projects">Projects</a>
+        <li class="header-mobile-item">
+          <a class="header-mobile-link" href="#my-projects">Projects</a>
         </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#contact">Contacts</a>
+        <li class="header-mobile-item">
+          <a class="header-mobile-link" href="#work-together">Contacts</a>
         </li>
       </ul>
     </nav>
