@@ -59,9 +59,7 @@
   z-index: 2;
 }
 
-/* .dark-theme.tech-marquee-top {
- background: #204136;
-} */
+
 
 .tech-marquee-bottom {
   /* background: #2a2d32; *//*Для чорної теми*/
@@ -72,9 +70,7 @@
   /* Якщо потрібно, можна додати нижній відступ або позиціонування */
 }
 
-/* .dark-theme.tech-marquee-bottom {
- background: #2a2d32;
-} */
+
 
 .tech-marquee-item {
   display: flex;
@@ -104,10 +100,7 @@
 }
 
 
-/* .dark-theme.ttech-skill-text {
- color: #f0f0f0;
- transform: rotate(-180deg);
-} */
+
 .tech-marquee-bottom .tech-skill-text {
   /* color: #14c57c; *//*Для чорної теми*/
   color: #00b068;
@@ -134,10 +127,7 @@
 }
 
 /* Стиль для темної теми */
-/* .dark-theme.tech-icon-top {
- fill: #14c57c;
- transform: rotate(-180deg);
-} */
+
 
 .tech-icon-bottom {
   width: 24px;
@@ -148,10 +138,7 @@
   transition: background-color 0.3s ease, fill 0.3s ease; /* Плавний перехід кольорів */
 }
 
-/* .dark-theme.tech-icon-bottom {
-fill: #f0f0f0;
-transform: rotate(-180deg);
-} */
+
 
 @keyframes tech-scrollLeft {
   0% {
@@ -225,4 +212,48 @@ transform: rotate(-180deg);
 .animation-paused {
   animation-play-state: paused;
 }
+
+
+
+/* -------------------------------------------------------------------Dark-theme------------------------------------------------------------- */
+
+.dark-theme.tech-marquee-top {
+ background: #204136;
+}
+
+.dark-theme.tech-marquee-bottom {
+ background: #2a2d32;
+}
+
+.dark-theme.ttech-skill-text {
+ color: #f0f0f0;
+ transform: rotate(-180deg);
+}
+
+.dark-theme.tech-icon-top {
+ fill: #14c57c;
+ transform: rotate(-180deg);
+}
+
+.dark-theme.tech-icon-bottom {
+fill: #f0f0f0;
+transform: rotate(-180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
