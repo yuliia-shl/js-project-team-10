@@ -1,8 +1,57 @@
+/* Шрифти */
+/*Poppins Light*/
+@font-face {
+  font-family: 'Poppins';
+  src: url(./fonts/poppins-light.ttf) format('truetype');
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+/*Poppins Regular*/
+@font-face {
+  font-family: 'Poppins';
+  src: url(./fonts/poppins-regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Poppins Medium*/
+@font-face {
+  font-family: 'Poppins';
+  src: url(./fonts/poppins-medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Poppins SemiBold*/
+@font-face {
+  font-family: 'Poppins';
+  src: url(./fonts/poppins-semibold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Impact Regular*/
+@font-face {
+  font-family: 'Impact';
+  src: url(./fonts/impact.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Montserrat Regular, Bold, SemiBold*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+}
+
 /* Загальні стилі */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -28,7 +77,6 @@
   --hover-green-dt: #009156;
   --error: #e74a3b;
 }
-
 
 /* Основні стилі */
 body {
@@ -60,8 +108,6 @@ p:last-child {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -105,6 +151,19 @@ img {
 
 .dark-theme .highlight {
   color: var(--accet-green-dt);
+}
+
+/* Стилі для приховання елементів */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 360px) {
