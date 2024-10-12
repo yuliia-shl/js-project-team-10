@@ -8,24 +8,14 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
-    text-align: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--light-grey);
     background-image: url('./img/bg-work-tab.png');
   }
 }
 
-#work-together h2,
-#work-together p,
-.contact-info li,
-.contact-info a,
-#contactForm input,
-#contactForm textarea,
-#contactForm input::placeholder,
-#contactForm textarea::placeholder,
-.uppercase,
+/* .uppercase, */
 .popup-content p,
 .close-btn {
   color: var(--black);
@@ -219,17 +209,18 @@
   /* stroke: var(--white); */
   fill: var(--accet-green);
   display: none;
+  border: none;
 }
 
 input:valid + .success-icon {
   display: block;
-  border: 1px solid var(--hover-grey);
+  border: 1px solid var(--accet-green);
+  background-color: var(--light-grey);
 }
 
 input:valid {
   outline: none;
   border-color: var(--hover-grey);
-  /* або замініть на бажаний колір */
   box-shadow: none;
   background-color: var(--light-grey);
 }
@@ -330,21 +321,13 @@ input:valid + .success-icon + .error-message {
 
 /* =====   Dark theme   ==== */
 
-.dark-theme#work-together {
+.dark-theme #work-together {
   background-color: inherit;
 }
 
-@media screen and (min-width: 768px) {
-  .dark-theme #work-together {
-    background-image: url('./img/bg-work-tab.png');
-  }
-}
-
-.dark-theme #work-together p,
-.dark-theme #work-together h2,
-.dark-theme .contact-info li,
-.dark-theme .contact-info a,
-.dark-theme #contactForm,
+.dark-theme #contactForm input,
+.dark-theme #contactForm input:valid,
+/* .dark-theme #contactForm textarea, */
 .dark-theme #contactForm input::placeholder,
 .dark-theme #contactForm textarea::placeholder,
 .dark-theme button,
@@ -353,7 +336,8 @@ input:valid + .success-icon + .error-message {
   color: var(--white-dt);
 }
 
-.dark-theme #contactForm .input-wrapper input,
+.dark-theme #contactForm input,
+.dark-theme #contactForm .input-wrapper input:valid,
 .dark-theme #contactForm textarea {
   background-color: var(--charcoal-dt);
   border: none;
@@ -363,7 +347,8 @@ input:valid + .success-icon + .error-message {
   stroke: var(--accet-green-dt);
 }
 
-.dark-theme .error-message {
+.dark-theme .error-message,
+.dark-theme #contactForm .input-wrapper input:invalid {
   color: var(--error);
 }
 
@@ -372,6 +357,7 @@ input:valid + .success-icon + .error-message {
 }
 
 .dark-theme .popup-content,
+.dark-theme #contactForm input:valid,
 .dark-theme .close-btn {
   background-color: var(--black-dt);
 }
