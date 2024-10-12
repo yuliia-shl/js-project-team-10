@@ -8,10 +8,10 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
-    background-size: cover;
-    background-position: center;
+    background-size: 50%;
+    background-position: right, top;
     background-repeat: no-repeat;
-    background-image: url('./img/bg-work-tab.png');
+    background-image: url('../img/bg-work-tab.png');
   }
 }
 
