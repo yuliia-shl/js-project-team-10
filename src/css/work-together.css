@@ -101,6 +101,7 @@
 .contact-info a {
   text-decoration: none;
   font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .contact-info a:hover {
