@@ -1,59 +1,74 @@
+.title {
+    margin-bottom: 40px;
+}
+
 .photo {
     width: 320px;
 height: 374px;
 border-radius: 16px;
-margin-top: 40px;
 margin-bottom: 40px;
 }
+
 .sub-title {
 font-size: 32px;
 font-weight: 500;
-line-height: 40px;
-letter-spacing: 0.5px;
+line-height: 1.25;
+letter-spacing: 0.02em;
 text-align: left;
 margin-bottom: 32px;
 }
+
 .bio-text {
     font-size: 16px;
     font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-align: left;
     margin-bottom: 24px;
 }
+
 .about-me-box {
     margin-bottom: 40px;
 }
+
 .about-me-list {
     padding: 0;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
+
 .list-marker {
     
   flex-shrink: 0;
   position: absolute;
-  left: 8px;
+  left: 0;
   top: 15%;
-  transform: translateY(-50%);
-
+  
+  fill: #00b068;
+   width: 24px;
+    height: 24px; 
+    transform: translateY(-50%) rotate(-180deg); 
+    transition: fill .3s ease;
 }
+
 .about-me-list-item {
     font-size: 16px;
     font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-align: left;
     display: flex;
     position: relative;
     padding-left: 26px;
-    margin-bottom: 12px;
+    
 }
+
 .list-marker-small {
     top: 50%;
 }
-.last-li {
-    margin-bottom: 0;
-}
+
+
 
 
 
