@@ -8,23 +8,30 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
-    background-size: 50%;
-    background-position: right, top;
+    background-size: 45%;
+    background-position: 95% 1%;
     background-repeat: no-repeat;
-    background-image: url('../img/bg-work-tab.png');
+    background-image: url('/img/bg-work-tab.png');
+    padding-top: 124px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .lwt-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* justify-content: space-between; */
     align-items: flex-start;
   }
+
+  #work-together {
+    background-size: 45%;
+    background-position: 90% 1%;
+    padding-top: 164px;
+    background-image: url('/img/bg-benefits-work-desk.png');
+  }
 }
 
-/* .uppercase, */
 .popup-content p,
 .close-btn {
   color: var(--black);
@@ -60,6 +67,7 @@
   line-height: 1.5;
   text-align: left;
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,9 +101,19 @@
 }
 
 @media screen and (min-width: 1280px) {
+  #work-together p {
+    margin-bottom: 120px;
+  }
+
+  .contact-info {
+    flex: 1;
+    max-width: 40%;
+    margin: 0;
+  }
+
   .contact-info ul {
     flex-direction: column;
-    margin-bottom: 120px;
+    margin: 0;
   }
 }
 
@@ -135,15 +153,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .contact-info {
+  .form-container {
     flex: 1;
-    max-width: 40%;
-    margin-right: 20px;
-  }
-
-  #contact-form {
-    flex: 1;
-    max-width: 50%;
+    margin-top: auto;
   }
 }
 
