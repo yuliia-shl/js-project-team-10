@@ -154,8 +154,12 @@
 
 @media screen and (min-width: 1280px) {
   .form-container {
-    flex: 1;
+    flex: 1 50%;
     margin-top: auto;
+  }
+
+  .contact-wrapper {
+    flex: 40%;
   }
 }
 
