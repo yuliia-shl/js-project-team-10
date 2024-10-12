@@ -151,6 +151,10 @@
   resize: none;
 }
 
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: var(--black);
+}
 #contactForm button {
   width: 100%;
   max-width: 400px;
@@ -215,8 +219,8 @@
 input:valid + .success-icon {
   display: block;
   border: 1px solid var(--accet-green);
-  background-color: var(--light-grey);
   border: none;
+  background-color: var(--light-grey);
 }
 
 input:valid {
