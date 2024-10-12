@@ -1,81 +1,71 @@
-.title {
-    margin-bottom: 40px;
+.about-me-title {
+  margin-bottom: 40px;
 }
 
 .photo-box {
-    width: 320px;
-height: 374px;
-border-radius: 16px;
-} 
+  width: 320px;
+  height: 374px;
+  border-radius: 16px;
+}
 
 .photo {
-    width: 320px;
-height: 374px;
-border-radius: 16px;
+  width: 320px;
+  height: 374px;
+  border-radius: 16px;
 }
 
 .sub-title {
-font-size: 32px;
-font-weight: 500;
-line-height: 1.25;
-letter-spacing: 0.02em;
-text-align: left;
-margin-bottom: 32px;
-text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 .bio-text {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 24px;
 }
+
 .about-me-info-cont {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-
-
 
 .about-me-list {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .list-marker {
-    
   flex-shrink: 0;
   position: absolute;
   left: 4px;
   top: 15%;
-  fill: #00b068; 
-  transform: translateY(-50%);   
+  fill: #00b068;
+  transform: translateY(-50%);
 }
 
 .about-me-list-item {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: left;
-    display: flex;
-    position: relative;
-    padding-left: 26px;
-    
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  position: relative;
+  padding-left: 26px;
 }
 
 .list-marker-small {
-    top: 50%;
+  top: 50%;
 }
-
-
-
-
-
-
-
