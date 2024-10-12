@@ -1,10 +1,5 @@
 
 .project-title {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -13,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+    margin-bottom: 60px;
   }
 
 
@@ -26,7 +22,7 @@ width: 320px;
   
   .project-img {
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
   
   .project-tech {
@@ -43,7 +39,8 @@ width: 320px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    
   }
   
   .project-btn {
@@ -53,20 +50,12 @@ padding: 12px 24px;
 width: 125px;
 height: 48px;
     display: inline-flex;
-    align-items: center;
     justify-content: center;
     background-color: var(--light-grey);
     font-size: 16px;
     text-transform: uppercase;
   }
 
-  .project-btn:last-child {
-     margin-bottom: 52px;
-  }
-
-  .project-btn:last-child {
-    margin-bottom: 52px;
-  }
 
   .project-btn:hover {
     background-color: var(--hover-grey);
