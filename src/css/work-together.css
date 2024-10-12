@@ -338,7 +338,7 @@ input:valid + .success-icon + .error-message {
 
 .dark-theme #contactForm input,
 .dark-theme .input-wrapper .success-icon,
-.dark-theme #contactForm input:valid,
+.dark-theme #contactForm .input-wrapper input:valid,
 .dark-theme #contactForm textarea {
   background-color: var(--charcoal-dt);
   border: none;
