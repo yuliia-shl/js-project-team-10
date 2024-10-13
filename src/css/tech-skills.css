@@ -124,7 +124,9 @@
   }
 
   .tech-skill-text {
-    font-size: 40px;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
   }
 
   .tech-icon {
@@ -142,10 +144,6 @@
 
   .tech-skills-content {
     height: 280px;
-  }
-
-  .tech-skill-text {
-    font-size: 44px;
   }
 
   .tech-icon {
