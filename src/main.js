@@ -4,3 +4,5 @@ import { form, emailInput, errorMessage } from './js/work-together';
 
 import { initHeader } from './js/menu.js';
 initHeader();
+
+import './js/faq.js';

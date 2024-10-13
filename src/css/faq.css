@@ -1,0 +1,135 @@
+.faq-section {
+    padding-bottom: 80px;
+}
+
+.faq-title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    width: 320px;
+    margin-bottom: 40px;
+}
+
+.faq-title span {
+    color: var(--accet-green);
+}
+
+/*li*/
+.faq-ac {
+    padding: 28px 24px;
+    border-radius: 16px;
+    border-bottom: 1px solid var(--c-lt-elem-bg);
+}
+
+.faq-ac.is-active {
+    background-color: var(--c-lt-elem-bg-accent);
+    border-radius: 16px;
+    background: #bcdfd1;
+}
+
+/*button*/
+.faq-ac-trigger {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.faq-ac-trigger span {
+    text-align: start;
+}
+
+.faq-trigger-icon {
+    width: 32px;
+    height: 32px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: var(--black) !important;
+    fill: var(--black) !important;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.faq-ac .faq-ac-panel {
+    overflow: hidden;
+    transition: height var(--trn-main-transition-params),
+        visibility var(--trn-main-transition-params);
+}
+
+.faq-ac.js-enabled .faq-ac-panel {
+    visibility: hidden;
+}
+
+.faq-ac.is-active .faq-ac-panel {
+    visibility: visible;
+    margin-top: 24px;
+}
+
+.faq-ac.is-active .faq-trigger-icon {
+    transform: scaleY(-100%);
+}
+
+.faq-ac-text {
+    font-family: var(--ff-global-font);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-section {
+        padding-bottom: 124px;
+    }
+
+    .faq-title {
+        max-width: 592px;
+        margin-bottom: 60px;
+    }
+
+    .faq-ac-trigger {
+        column-gap: 24px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .faq-section {
+        padding-bottom: 164px;
+    }
+
+    .faq-section .container {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 104px;
+        justify-content: space-between;
+    }
+
+    .wrap {
+        background-image: url('/images/faq-bg1x.png');
+        background-size: 536px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
+    .faq-title {
+        max-width: 520px;
+        margin-bottom: 0;
+    }
+
+    .faq-ac-container {
+        max-width: 592px;
+        margin-top: 276px;
+    }
+}
