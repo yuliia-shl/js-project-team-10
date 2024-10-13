@@ -51,14 +51,18 @@ body.light {
     opacity: 0;
   }
 }
+.icon-container {
+  position: relative;
+  margin-left: 16px;
+}
 .switch_container {
   display: flex;
+  position: relative;
 }
 #switch {
   display: none;
 }
 .label {
-  position: relative;
   height: 24px;
   width: 48px;
   background-color: #e4e5e6;
@@ -158,6 +162,9 @@ body.light {
   text-transform: uppercase;
   color: var(--black);
 }
+body.dark .header-logo {
+  color: var(--white-dt);
+}
 .header-logo-tech {
   color: var(--accet-green);
 }
@@ -174,6 +181,15 @@ body.light {
 .header-btn-icon {
   stroke: var(--black);
 }
+
+body.dark .header-btn-icon {
+  fill: var(--white);
+}
+
+body.light .header-btn-icon {
+  fill: var(--black);
+}
+
 .header-mobile-logo {
   font-family: var(--second-family);
   font-weight: 400;
@@ -365,6 +381,14 @@ body.light {
   stroke: var(--black);
   background: none;
 }
+.header-mobile-menu-close-icon {
+  width: 32px;
+  height: 32px;
+
+  border-color: #fff;
+  stroke-width: 2px;
+  stroke: var(--black);
+}
 .header-mobile-navigation {
   padding-top: 200px;
   animation: burgerAnimation 0.4s;
@@ -396,8 +420,14 @@ body.light {
 .header-mobile-link:focus {
   color: var(--accet-green);
 }
+body.dark .header-mobile-link {
+  color: var(--white);
+}
 .header-mobile-menu {
-  background-image: url(../img/background-img/decor-bg-1mob.webp);
+  background-image: url(../img/bg-mob.png);
   background-repeat: no-repeat;
   background-size: 320px 704px;
+}
+body.dark .header-mobile-menu {
+  background-image: url(../img/bg-decor-dark.png);
 }
