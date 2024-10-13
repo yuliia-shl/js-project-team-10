@@ -1,10 +1,10 @@
 .about-me-title {
   margin-bottom: 40px;
+  font-size: 52px;
 }
 
-.photo-box {
+.photo-card {
   width: 320px;
-  height: 374px;
   border-radius: 16px;
 }
 
@@ -22,6 +22,7 @@
   text-align: left;
   margin-bottom: 32px;
   text-transform: uppercase;
+  color: #292929;
 }
 
 .bio-text {
@@ -68,4 +69,53 @@
 
 .list-marker-small {
   top: 50%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .about-me-title {
+    font-size: 108px;
+  }
+
+  .about-me-info-cont{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .photo-card {
+    width: 336px;
+    margin-top: 408px;
+    height: 392px;
+  }
+
+.bio-text {
+  width: 336px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+}
+
+.about-me-box {
+  width: 336px;
+  margin-top: 140px;
+}
+
+.sub-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+}
+
+#about-me {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg-about-tab.png');
+  background-size: 336px 252px;
+  background-position-x: 390px;
+  background-position-y: 980px;
+
+}
 }
