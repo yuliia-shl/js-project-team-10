@@ -8,8 +8,8 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
-    background-size: 45%;
-    background-position: 95% 1%;
+    background-size: 40%;
+    background-position: 95% 1px;
     background-repeat: no-repeat;
     background-image: url('/img/bg-work-tab.png');
     padding-top: 124px;
@@ -25,8 +25,8 @@
   }
 
   #work-together {
-    background-size: 45%;
-    background-position: 90% 1%;
+    background-size: 40%;
+    background-position: 95% 124px;
     padding-top: 164px;
     background-image: url('/img/bg-benefits-work-desk.png');
   }
@@ -57,6 +57,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  #work-together h2 {
+    margin-bottom: 120px;
+  }
+}
+
 #work-together .highlight {
   color: var(--accet-green);
 }
@@ -80,8 +86,12 @@
 }
 
 /* Контактна інформація */
-.contact-info {
+
+.contact-wrapper {
   margin-bottom: 40px;
+}
+
+.contact-info {
   font-style: normal;
   /* Відміняємо курсив для тега <address> */
 }
@@ -96,6 +106,9 @@
 @media screen and (min-width: 768px) {
   .contact-info ul {
     flex-direction: row;
+  }
+
+  .contact-wrapper {
     margin-bottom: 60px;
   }
 }
@@ -114,6 +127,10 @@
   .contact-info ul {
     flex-direction: column;
     margin: 0;
+  }
+
+  .contact-wrapper {
+    margin-bottom: 0;
   }
 }
 
@@ -156,6 +173,7 @@
   .form-container {
     flex: 1 50%;
     margin-top: auto;
+    max-width: 592px;
   }
 
   .contact-wrapper {
@@ -175,6 +193,10 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   background-color: var(--light-grey);
+}
+
+#contactForm input {
+  padding: 12px 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -221,7 +243,7 @@
 
 @media screen and (min-width: 768px) {
   #contactForm button {
-    max-width: 172px;
+    max-width: 173px;
     display: flex;
   }
 }
