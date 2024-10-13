@@ -28,6 +28,9 @@
     background-color: var(--light-accent);
     padding: 12px;
 }
+.dark-theme .benefits-icon {
+    background: var(--dark-accet-dt);
+}
 .benefits-list-item-title {
     font-family: var(--font-family);
     font-weight: 400;
@@ -96,3 +99,4 @@
             margin-left: 832px;
         }
 }
+
