@@ -90,6 +90,10 @@
     height: 392px;
   }
 
+  .photo {
+    width: 336px;
+  }
+
 .bio-text {
   width: 336px;
 line-height: 1.5;
@@ -117,11 +121,12 @@ letter-spacing: 0.03em;
 
 #about-me {
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url('/img/bg-about-tab.png');
-  background-size: 336px 252px;
+  background-size: 43vw 30vh;
   background-position-x: 50vw;
-  background-position-y: 910px;
-}
-}
+  background-position-y: 140vh;
 
+}
+}
