@@ -2,7 +2,7 @@
 /*Poppins Light*/
 @font-face {
   font-family: 'Poppins';
-  src: url(./fonts/poppins-light.ttf) format('truetype');
+  src: url(/fonts/poppins-light.ttf) format('truetype');
   font-weight: 300;
 
   font-style: normal;
@@ -11,7 +11,7 @@
 /*Poppins Regular*/
 @font-face {
   font-family: 'Poppins';
-  src: url(./fonts/poppins-regular.ttf) format('truetype');
+  src: url(/fonts/poppins-regular.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 /*Poppins Medium*/
 @font-face {
   font-family: 'Poppins';
-  src: url(./fonts/poppins-medium.ttf) format('truetype');
+  src: url(/fonts/poppins-medium.ttf) format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -27,7 +27,7 @@
 /*Poppins SemiBold*/
 @font-face {
   font-family: 'Poppins';
-  src: url(./fonts/poppins-semibold.ttf) format('truetype');
+  src: url(/fonts/poppins-semibold.ttf) format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -35,7 +35,7 @@
 /* Impact Regular*/
 @font-face {
   font-family: 'Impact';
-  src: url(./fonts/impact.ttf) format('truetype');
+  src: url(/fonts/impact.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -125,6 +125,8 @@ img {
 
 .container {
   width: 320px;
+  /* width: 100%;
+  max-width: 360px; */
   padding: 0 20px;
   margin: 0 auto;
 }
