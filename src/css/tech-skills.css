@@ -200,25 +200,50 @@
 
 /* -------------------------------------------------------------------Dark-theme------------------------------------------------------------- */
 
-.dark-theme.tech-marquee-top {
+.dark-theme .tech-marquee-top {
   background: #204136;
 }
 
-.dark-theme.tech-marquee-bottom {
+.dark-theme .tech-marquee-bottom {
   background: #2a2d32;
 }
 
-.dark-theme.tech-skill-text {
+.dark-theme .tech-skill-text {
   color: #f0f0f0;
   transform: rotate(-180deg);
 }
 
-.dark-theme.tech-icon-top {
+.dark-theme .tech-icon-top {
   fill: #14c57c;
   transform: rotate(-180deg);
 }
 
-.dark-theme.tech-icon-bottom {
+.dark-theme .tech-icon-bottom {
   fill: #f0f0f0;
   transform: rotate(-180deg);
 }
+/* 
+--------------------------Варіант-2-------------------------------------- */
+/* 
+.dark-theme .tech-marquee-top {
+  background: var(--tech-marquee-top-bg);
+}
+
+.dark-theme .tech-marquee-bottom {
+  background: var(--tech-marquee-bottom-bg);
+}
+
+.dark-theme .tech-skill-text {
+  color: var(--tech-skill-text-color);
+  transform: rotate(var(--rotation-angle));
+}
+
+.dark-theme .tech-icon-top {
+  fill: var(--tech-icon-top-fill);
+  transform: rotate(var(--rotation-angle));
+}
+
+.dark-theme .tech-icon-bottom {
+  fill: var(--tech-icon-bottom-fill);
+  transform: rotate(var(--rotation-angle));
+} */
