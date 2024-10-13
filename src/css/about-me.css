@@ -81,12 +81,13 @@
   .about-me-info-cont{
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
+    row-gap: 0;
+    column-gap: 32px;
   }
 
   .photo-card {
     width: 336px;
-    margin-top: 408px;
+    margin-top: 368px;
     height: 392px;
   }
 
@@ -120,6 +121,6 @@ letter-spacing: 0.03em;
   background-image: url('../img/bg-about-tab.png');
   background-size: 336px 252px;
   background-position-x: 50vw;
-  background-position-y: 930px;
+  background-position-y: 910px;
 }
 }
