@@ -355,8 +355,9 @@ input:valid + .success-icon + .error-message {
   cursor: pointer;
 }
 
-.close-btn:hover {
-  color: var(--light-grey);
+.close-btn:hover,
+.dark-theme .close-btn:hover {
+  color: var(--hover-green-dt);
 }
 
 /* =====   Dark theme   ==== */
