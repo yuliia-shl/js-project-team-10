@@ -29,13 +29,13 @@
   .project-tech {
     font-weight: 300;
     font-size: 16px;
-    color: #666;
+    color: var(--black);
     margin-bottom: 16px;
   }
   
   .project-subtitle {
     font-size: 36px;
-line-height: 1.33333;
+line-height: 1.33;
 letter-spacing: 0.01em;
     font-weight: 500;
     margin-bottom: 16px;
@@ -53,6 +53,7 @@ height: 48px;
     font-size: 16px;
     text-transform: uppercase;
     align-self: flex-end;
+    transition: transform color 0.3s ease-in-out;
 
   }
 
@@ -96,7 +97,7 @@ height: 48px;
     height: 2px;
     background-color: var(--accet-green);
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin:center;
     transition: transform 0.3s ease-in-out; 
   }
   
@@ -108,8 +109,6 @@ height: 48px;
     color: var(--accet-green);
 
   }
-
-
 
   
   @media screen and (min-width: 768px) {
@@ -154,16 +153,27 @@ height: 48px;
       margin-left: 0;
       text-align: center;
       font-size: 20px;
-
+      width: 165px;
     }
+
+
     
   }
   
   @media screen and (min-width: 1280px) {
-   
 
   
  
   }
 
 
+    /* Dark theme styles */
+
+    .dark-theme .project-btn
+    {
+      background-color:  var( --charcoal-dt); 
+    }
+ 
+    .dark-theme .project-btn:hover {
+     background-color: var( --hover-charcoal-dt);
+    }
