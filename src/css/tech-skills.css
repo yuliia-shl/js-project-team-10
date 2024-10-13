@@ -1,23 +1,10 @@
+/* ----- Стилі для Тех скілів ----- */
 .tech-skills-container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
   width: 360px;
   height: 244px;
-}
-
-@media screen and (min-width: 768px) {
-  .tech-skills-container {
-    width: 768px;
-    height: 280px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .tech-skills-container {
-    width: 1280px;
-    height: 280px;
-  }
 }
 
 .tech-skills-content {
@@ -40,22 +27,13 @@
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .tech-marquee {
-    padding: 40px 0;
-    height: 128px;
-  }
-}
-
 .tech-marquee-top {
-  /* background: #204136; */ /*Для чорної теми*/
-  background: #bcdfd1;
+  background: var(--light-accent);
   z-index: 2;
 }
 
 .tech-marquee-bottom {
-  /* background: #2a2d32; */ /*Для чорної теми*/
-  background: #e4e5e6;
+  background: var(--light-grey);
   transform: rotate(2deg);
   position: absolute;
   width: 100%;
@@ -82,53 +60,38 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  /* font-family: "Poppins", sans-serif; */
-  /* color: #292929; */
-  /* color: #f0f0f0; */ /*Для чорної теми*/
-  margin: 0 8px; /* Відстань між текстом і іконкою */
+  margin: 0 8px;
   white-space: nowrap;
 }
 
 .tech-marquee-bottom .tech-skill-text {
-  /* color: #14c57c; */ /*Для чорної теми*/
-  color: #00b068;
-}
-
-.tech-icon {
-  width: 8px;
-  height: 8px;
-  /* background-color: #14c57c; */
-  background: #292929;
-  border-radius: 2px;
-  margin: 0 8px; /* Відстань між іконкою і текстом */
-  transform: rotate(-180deg);
+  color: var(--accet-green);
 }
 
 /* Основний стиль іконки */
 .tech-icon-top {
   width: 24px;
   height: 24px;
-  fill: #00b068;
+  fill: var(--accet-green);
   transform: rotate(-180deg);
-  /* cursor: pointer; */
-  transition: fill 0.3s ease; /* Плавний перехід кольору */
+  transition: fill 0.3s ease;
+  /* Плавний перехід кольору */
 }
-
-/* Стиль для темної теми */
 
 .tech-icon-bottom {
   width: 24px;
   height: 24px;
-  fill: #292929; /* Білий фон */
+  fill: var(--black);
   transform: rotate(-180deg);
-  cursor: pointer;
-  transition: background-color 0.3s ease, fill 0.3s ease; /* Плавний перехід кольорів */
+  transition: background-color 0.3s ease, fill 0.3s ease;
+  /* Плавний перехід кольорів */
 }
 
 @keyframes tech-scrollLeft {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -138,6 +101,7 @@
   0% {
     transform: translateX(-50%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -145,8 +109,18 @@
 
 /* Адаптивні стилі для планшетів і більших екранів */
 @media screen and (min-width: 768px) {
+  .tech-skills-container {
+    width: 768px;
+    height: 280px;
+  }
+
   .tech-skills-content {
     height: 280px;
+  }
+
+  .tech-marquee {
+    padding: 40px 0;
+    height: 128px;
   }
 
   .tech-skill-text {
@@ -161,6 +135,11 @@
 
 /* Адаптивні стилі для великих екранів */
 @media screen and (min-width: 1280px) {
+  .tech-skills-container {
+    width: 1280px;
+    height: 280px;
+  }
+
   .tech-skills-content {
     height: 280px;
   }
@@ -175,19 +154,6 @@
   }
 }
 
-/* Стилі для прихованого заголовка */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap;
-}
-
 /* Стилі для запуску анімації */
 .animation-running {
   animation-play-state: running;
@@ -198,27 +164,23 @@
   animation-play-state: paused;
 }
 
-/* -------------------------------------------------------------------Dark-theme------------------------------------------------------------- */
-
-.dark-theme.tech-marquee-top {
-  background: #204136;
+/* ----- Dark-theme ----- */
+.dark-theme .tech-marquee-top {
+  background: var(--dark-accet-dt);
 }
 
-.dark-theme.tech-marquee-bottom {
-  background: #2a2d32;
+.dark-theme .tech-marquee-bottom {
+  background: var(--charcoal-dt);
 }
 
-.dark-theme.tech-skill-text {
-  color: #f0f0f0;
-  transform: rotate(-180deg);
+.dark-theme .tech-marquee-bottom .tech-skill-text {
+  color: var(--white-dt);
 }
 
-.dark-theme.tech-icon-top {
-  fill: #14c57c;
-  transform: rotate(-180deg);
+.dark-theme .tech-icon-top {
+  fill: var(--accet-green-dt);
 }
 
-.dark-theme.tech-icon-bottom {
-  fill: #f0f0f0;
-  transform: rotate(-180deg);
+.dark-theme .tech-icon-bottom {
+  fill: var(--white-dt);
 }
