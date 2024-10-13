@@ -27,34 +27,7 @@
     background: #2A2D32;
     border-radius: 16px;
     padding: 32px;
-    width: 576px;
-    /* Кожен відгук займає половину ширини */
     min-height: 224px;
-    /*
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background: #2A2D32;
-  border-radius: 16px;
-  padding: 32px;
-  width: 592px;
-  min-height: 224px; */
-    /* background: #2A2D32;
-  border-radius: 20px;
-  padding: 32px 24px;
-  height: 384px; */
-    /* display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 24px;
-border-radius: 16px;
-padding: 32px;
-width: 592px;
-height: 224px;
-background: #2A2D32; */
 }
 
 .error-mock {
@@ -168,9 +141,21 @@ button.swiper-button-disabled {
     stroke: #FFFFFF;
 }
 
+.reviews-list-item.swiper-slide {
+    background: var(--light-grey);
+}
+
+.dark-theme .reviews-list-item.swiper-slide {
+    background: var(--charcoal-dt);
+}
+
 @media screen and (min-width: 768px) {
 .reviews-container {
         margin-right: 32px;
         margin-left: 32px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+
 }
