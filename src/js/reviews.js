@@ -55,7 +55,7 @@ async function renderReviews() {
                 return `<li class="reviews-list-item swiper-slide">
                             <p class="reviews-text">${review}</p>
                             <div class="reviewer-info">
-                                <img class="reviewers-avatar" src="${avatar_url}" alt="reviewer avatar" loading="lazy" />
+                                <img class="reviewers-avatar" src="${avatar_url}" alt=" ${author} photo" loading="lazy" />
                                 <h3 class="reviewers-name">${author}</h3>
                             </div>
                         </li>`;
