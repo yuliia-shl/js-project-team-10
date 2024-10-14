@@ -26,7 +26,7 @@
 
   #work-together {
     background-size: 40%;
-    background-position: 95% 124px;
+    background-position: 95% 84px;
     padding-top: 164px;
     background-image: url('/img/bg-benefits-work-desk.png');
   }
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 1280px) {
   #work-together h2 {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
   }
 }
 
@@ -214,7 +214,7 @@
 #contactForm textarea::placeholder {
   color: var(--black);
 }
-#contactForm button {
+.form-btn {
   width: 100%;
   max-width: 400px;
   padding: 12px 24px;
@@ -233,17 +233,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  #contactForm button {
+  .form-btn {
     max-width: 173px;
     display: flex;
   }
 }
 
-#contactForm button:hover {
+.form-btn:hover {
   background-color: var(--hover);
 }
 
-#contactForm button:focus {
+.form-btn:focus {
   outline: none;
 }
 
