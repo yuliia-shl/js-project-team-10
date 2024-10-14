@@ -161,13 +161,10 @@ button.swiper-button-disabled {
 .dark-theme button.review-button-next.swiper-button-disabled .review-icon {
     stroke: #2A2D32;
 }
-@media screen and (min-width: 768px) {
-.reviews-container {
-        margin-right: 32px;
-        margin-left: 32px;
-    }
-}
+
 
 @media screen and (min-width: 1280px) {
-
+.reviews-list-item {
+    max-width: 592px;
+}
 }
