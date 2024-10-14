@@ -70,6 +70,10 @@
   top: 50%;
 }
 
+/* темна тема маркери */
+.dark-theme .list-marker {
+  color: var(--accet-green-dt);
+}
 
 
 @media screen and (min-width: 768px) {
@@ -136,13 +140,24 @@ background-position-x: 390px;
 background-position-y: 910px;
 }
 
+/* темна тема бекграунд */
+.dark-theme #about-me {
+  background-image: url('/img/bg-about-tab-dark.png')
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 2dppx),
 (min-resolution: 192dpi) {
   #about-me {
     background-image: url(/img/bg-about-tab-2x.png);
   }
+
+  .dark-theme #about-me {
+    background-image: url('/img/bg-about-tab-dark-2x.png')
+  }
+
 }
+
 
 }
 @media screen and (min-width: 1280px) {
@@ -179,6 +194,10 @@ background-position-y: 910px;
     margin-bottom: 0;
   }
 
+  .left {
+    width: 384px;
+  }
+
   .right {
     width: 488px;
   }
@@ -192,12 +211,23 @@ background-position-y: 910px;
   background-position-y: 770px;
   }
 
+  /* темна тема бекграунд */
+  .dark-theme #about-me {
+    background-image: url('/img/bg-about-desk-dark.png')
+  }
+
   @media screen and (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 2dppx),
 (min-resolution: 192dpi) {
   #about-me {
     background-image: url(/img/bg-about-desc-2x.png);
   }
+
+  .dark-theme #about-me {
+    background-image: url('/img/bg-about-desk-dark-2x.png')
+  }
+
 }
   
 }
+
