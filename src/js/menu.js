@@ -111,27 +111,37 @@ export const initHeader = () => {
 
 /* =====   menu options   ===== */
 
-
-export const menu = document.addEventListener('DOMContentLoaded', function() {
+export const menu = document.addEventListener('DOMContentLoaded', function () {
   const openMenuButton = document.querySelector('.js-open-menu');
   const closeMenuButton = document.querySelector('.js-close-menu');
   const menuContainer = document.getElementById('mobile-menu');
+  const menuLinks = document.querySelectorAll('.header-mobile-link');
 
   // Відкриває меню
-  openMenuButton.addEventListener('click', function() {
+  openMenuButton.addEventListener('click', function () {
     menuContainer.classList.add('active');
     openMenuButton.setAttribute('aria-expanded', 'true');
   });
 
   // Закриває меню
-  closeMenuButton.addEventListener('click', function() {
+  closeMenuButton.addEventListener('click', function () {
     menuContainer.classList.remove('active');
     openMenuButton.setAttribute('aria-expanded', 'false');
   });
 
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      menuContainer.classList.remove('active');
+      openMenuButton.setAttribute('aria-expanded', 'false');
+    });
+  });
+
   // Закриває меню при кліку поза межами меню
-  document.addEventListener('click', function(event) {
-    if (!menuContainer.contains(event.target) && !openMenuButton.contains(event.target)) {
+  document.addEventListener('click', function (event) {
+    if (
+      !menuContainer.contains(event.target) &&
+      !openMenuButton.contains(event.target)
+    ) {
       menuContainer.classList.remove('active');
       openMenuButton.setAttribute('aria-expanded', 'false');
     }

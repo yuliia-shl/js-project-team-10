@@ -1,4 +1,8 @@
 /* ----- Header ----- */
+html {
+  scroll-behavior: smooth;
+}
+
 .header-section {
   width: 100%;
   height: 64px;
