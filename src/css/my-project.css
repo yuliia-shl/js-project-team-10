@@ -214,6 +214,10 @@ height: 48px;
     {
       background-color:  var( --charcoal-dt); 
     }
+
+    .dark-theme .project-tech {
+      color: var(--white);
+    }
  
     .dark-theme .project-btn:hover {
      background-color: var( --hover-charcoal-dt);
