@@ -307,7 +307,8 @@
 }
 
 .dark-theme .menu-close-icon {
-  stroke: var(--accet-green-dt);
+  stroke: var(--white-dt);
+  fill: var(--black);
 }
 
 .header-nav-menu-wrap {
