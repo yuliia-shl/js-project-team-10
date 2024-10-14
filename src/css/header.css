@@ -96,11 +96,11 @@
   right: 9%;
 }
 
-#switch:checked+.label {
+#switch:checked + .label {
   background-color: #2a2d32;
 }
 
-#switch:checked+.label::before {
+#switch:checked + .label::before {
   -webkit-transform: translateX(25px);
   -ms-transform: translateX(25px);
   transform: translateX(25px);
@@ -114,15 +114,15 @@
   background-position: center;
 }
 
-#switch:checked+.label .fa-sun {
+#switch:checked + .label .fa-sun {
   left: 11%;
 }
 
-#switch:checked+.label .fa-moon {
+#switch:checked + .label .fa-moon {
   right: -24%;
 }
 
-#switch:active+.label::before {
+#switch:active + .label::before {
   width: 35px;
 }
 
@@ -136,6 +136,16 @@
   cursor: pointer;
   background: none;
   border: none;
+}
+/* Темна тема */
+.dark-theme .header-btn {
+  background-color: var(--black); /* Зелений фон для кнопки бургер-меню */
+}
+
+.dark-theme .header-btn-icon {
+  fill: var(
+    --accet-green-dt
+  ); /* Білий колір іконки бургер-меню в темній темі */
 }
 
 /* -------------------------------- */
@@ -171,7 +181,7 @@
     height: 20px;
   }
 
-  #switch:checked+.label::before {
+  #switch:checked + .label::before {
     width: 20px;
     height: 20px;
   }
@@ -204,7 +214,6 @@
   .header-btn {
     display: none;
   }
-
 }
 
 /* ------------------------------ */
@@ -218,7 +227,6 @@
   }
 }
 
-
 @keyframes burgerAnimation {
   from {
     opacity: 0;
@@ -228,7 +236,6 @@
     opacity: 1;
   }
 }
-
 
 /* ------ Mobile menu ------ */
 .header-mobile-menu-container {
@@ -275,6 +282,9 @@
   transition: transform 0.25s ease-in-out;
   /* padding: 20px; */
 }
+.dark-theme .header-mobile-menu {
+  background: var(--black);
+}
 
 .header-mobile-menu-close {
   /* position: absolute; */
@@ -295,15 +305,21 @@
   background: none;
 }
 
+.dark-theme .header-mobile-menu-close {
+  background-color: var(--black);
+  border: none;
+}
 .header-mobile-menu-close-icon {
   width: 24px;
   height: 24px;
   /* border-color: #fff; */
   stroke-width: 2px;
   /* stroke: var(--black); */
-  stroke: #e4e5e6;
+  stroke: var(--accet-green);
 }
-
+.dark-theme .header-mobile-menu-close-icon {
+  stroke: var(--accet-green-dt);
+}
 .header-nav-menu-wrap {
   display: flex;
   justify-content: center;
@@ -317,8 +333,8 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
-(min-rezolution: 2dppx),
-(min-rezolution: 192dpi) {
+  (min-rezolution: 2dppx),
+  (min-rezolution: 192dpi) {
   .header-nav-menu-wrap {
     background-image: url(/img/bg-hero-mob_2x.png);
   }
