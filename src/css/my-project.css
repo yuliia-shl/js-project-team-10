@@ -1,3 +1,8 @@
+#my-projects {
+  padding-bottom: 48px;
+
+}
+
 .project-title {
 text-align: center;    
 margin-bottom: 40px;
@@ -177,7 +182,7 @@ height: 48px;
     .project-list {
       grid-template-columns: repeat(1, 1fr);
       gap: 80px;
-
+      margin-bottom: 80px;
     }
 
     .project-title {
