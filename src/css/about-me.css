@@ -101,13 +101,21 @@ letter-spacing: 0.03em;
 }
 
 .about-me-box {
-  width: 336px;
+  
   margin-bottom: 108px;
 }
 
 .last-box {
   margin-bottom: 0;
 }
+
+ .left {
+  width: 336px;
+ }
+
+ .right {
+  width: 336px;
+ }
 
 .sub-title {
   font-size: 36px;
@@ -154,7 +162,7 @@ background-position-y: 910px;
     gap: 0;
     column-gap: 136px;
     row-gap: 80px;
-    justify-content: center;
+    justify-content: end;
   }
 
   .bio-text {
@@ -162,13 +170,17 @@ background-position-y: 910px;
   }
 
   .about-me-box {
-    width: 384px;
+    
     margin-bottom: 232px;
   }
 
   .last-box {
     width: 384px;
     margin-bottom: 0;
+  }
+
+  .right {
+    width: 488px;
   }
 
   #about-me {
