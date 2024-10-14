@@ -1,8 +1,4 @@
 /* ----- Header ----- */
-html {
-  scroll-behavior: smooth;
-}
-
 .header-section {
   width: 100%;
   height: 64px;
@@ -100,11 +96,12 @@ html {
   right: 9%;
 }
 
-#switch:checked + .label {
+#switch:checked+.label {
   background-color: var(--black);
 }
 
-#switch:checked + .label::before {
+#switch:checked+.label::before {
+  content: '';
   -webkit-transform: translateX(25px);
   -ms-transform: translateX(25px);
   transform: translateX(25px);
@@ -118,15 +115,15 @@ html {
   background-position: center;
 }
 
-#switch:checked + .label .fa-sun {
+#switch:checked+.label .fa-sun {
   left: 11%;
 }
 
-#switch:checked + .label .fa-moon {
+#switch:checked+.label .fa-moon {
   right: -24%;
 }
 
-#switch:active + .label::before {
+#switch:active+.label::before {
   width: 35px;
 }
 
@@ -142,15 +139,9 @@ html {
   border: none;
 }
 
-/* Темна тема */
-.dark-theme .header-btn {
-  background-color: inherit;
-  /* Зелений фон для кнопки бургер-меню */
-}
-
-.dark-theme .header-btn-icon {
-  fill: var(--accet-green-dt);
-  /* Білий колір іконки бургер-меню в темній темі */
+.header-btn:hover,
+.header-btn:focus {
+  fill: var(--accet-green);
 }
 
 /* -------------------------------- */
@@ -186,7 +177,7 @@ html {
     height: 20px;
   }
 
-  #switch:checked + .label::before {
+  #switch:checked+.label::before {
     width: 20px;
     height: 20px;
   }
@@ -204,9 +195,8 @@ html {
 
   .header-link {
     font-weight: 300;
-    /* font-size: 16px; */
+    font-size: 16px;
     transition: color 0.25s ease-in-out;
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -270,11 +260,16 @@ html {
   transform: translate(-50%, -50%);
   height: 100%;
   min-width: 100%;
-  background: var(--white);
+  /* background: var(--white); */
 }
 
-.dark-theme .header-mobile-menu {
-  background: var(--black);
+.header-btn-icon {
+  transition: fill 0.25s ease-in-out;
+}
+
+.header-btn-icon:hover,
+.header-btn-icon:focus {
+  fill: var(--accet-green);
 }
 
 .header-mobile-menu-close {
@@ -283,20 +278,9 @@ html {
   justify-content: end;
   padding: 0;
   cursor: pointer;
-  transition: color 0.2s ease-in-out;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 0.25s ease-in-out;
   border: none;
   background: none;
-}
-
-.dark-theme .header-btn-icon {
-  background-color: var(--black);
-  border: none;
-}
-
-.dark-theme .header-mobile-menu-close {
-  background-color: var(--black);
-  border: none;
 }
 
 .menu-close-icon {
@@ -305,11 +289,12 @@ html {
   stroke: var(--black);
   fill: var(--white);
   stroke-width: 0;
+  transition: stroke 0.25s ease-in-out;
 }
 
-.dark-theme .menu-close-icon {
-  stroke: var(--white-dt);
-  fill: var(--black);
+.menu-close-icon:hover,
+.menu-close-icon:focus {
+  stroke: var(--accet-green);
 }
 
 .header-nav-menu-wrap {
@@ -323,8 +308,8 @@ html {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-rezolution: 2dppx),
-  (min-rezolution: 192dpi) {
+(min-rezolution: 2dppx),
+(min-rezolution: 192dpi) {
   .header-nav-menu-wrap {
     background-image: url(/img/bg-hero-mob_2x.png);
   }
@@ -348,8 +333,7 @@ html {
   /* padding-left: initial; */
   padding: 12px;
   cursor: pointer;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  transition: color 0.2s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .header-mobile-item:hover,
@@ -368,7 +352,52 @@ html {
   transition: transform 0.25s ease-in-out;
 }
 
-/* .header-mobile-link:hover,
-.header-mobile-link:focus {
-  color: var(--accet-green);
-} */
+/* ----- Dark theme ----- */
+
+.dark-theme .header-btn {
+  background-color: inherit;
+  /* Зелений фон для кнопки бургер-меню */
+}
+
+.dark-theme .header-btn-icon {
+  fill: var(--white);
+  /* Білий колір іконки бургер-меню в темній темі */
+}
+
+.dark-theme .header-mobile-menu {
+  background: var(--black);
+}
+
+.dark-theme .header-btn-icon {
+  border: none;
+}
+
+.dark-theme .header-btn-icon:hover,
+.dark-theme .header-btn-icon:focus {
+  fill: var(--accet-green-dt);
+}
+
+.dark-theme .header-btn-icon {
+  border: none;
+}
+
+.dark-theme .header-mobile-menu-close {
+  background-color: var(--black);
+  border: none;
+}
+
+.dark-theme .menu-close-icon {
+  stroke: var(--white-dt);
+  fill: var(--black);
+}
+
+.dark-theme .menu-close-icon:hover,
+.dark-theme .menu-close-icon:focus {
+  stroke: var(--accet-green-dt);
+  border: none;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  fill: var(--white);
+}
