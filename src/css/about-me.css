@@ -128,6 +128,14 @@ background-position-x: 390px;
 background-position-y: 910px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+  #about-me {
+    background-image: url(/img/bg-about-tab-2x.png);
+  }
+}
+
 }
 @media screen and (min-width: 1280px) {
 
@@ -171,5 +179,13 @@ background-position-y: 910px;
   background-position-x: 810px;
   background-position-y: 770px;
   }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+  #about-me {
+    background-image: url(/img/bg-about-desc-2x.png);
+  }
+}
   
 }
