@@ -25,9 +25,11 @@ const swiperForReviews = new Swiper(refs.swiper, {
   breakpoints: {
     768: {
       slidesPerView: 1,
+      autoHeight: false,
     },
-    1440: {
+    1280: {
       slidesPerView: 2,
+      spaceBetween: 32,
       keyboard: {
         enabled: true,
         onlyInViewport: true,

@@ -4,10 +4,10 @@
   margin-bottom: 40px;
 }
 
-.reviews-container {
+/* .reviews-container {
   margin-right: 20px;
   margin-left: 20px;
-}
+} */
 
 .reviews-list {
   /* margin-bottom: 32px; */
@@ -168,12 +168,26 @@ button.swiper-button-disabled {
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-container {
+
+  /* .reviews-container {
     margin-right: 32px;
     margin-left: 32px;
+  } */
+  #review {
+    padding-bottom: 0;
+  }
+
+  .reviews-title {
+    margin-bottom: 60px;
+  }
+
+  .reviews-list-item.swiper-slide {
+    max-height: 224px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-
+  .reviews-title {
+    margin-bottom: 80px;
+  }
 }
