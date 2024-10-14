@@ -120,15 +120,14 @@ letter-spacing: 0.03em;
 }
 
 #about-me {
-  background-size: contain;
+  background-size: 336px 252px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('/img/bg-about-tab.png');
-  background-size: 43vw 30vh;
-  background-position-x: 50vw;
-  background-position-y: 140vh;
-
+background-position-x: 390px;
+background-position-y: 910px;
 }
+
 }
 @media screen and (min-width: 1280px) {
 
@@ -138,10 +137,16 @@ letter-spacing: 0.03em;
     height: 448px;
   }
 
+  .photo {
+    width: 384px;
+    margin: 0;
+  }
+
   .about-me-info-cont{
     gap: 0;
     column-gap: 136px;
     row-gap: 80px;
+    justify-content: center;
   }
 
   .bio-text {
@@ -149,7 +154,7 @@ letter-spacing: 0.03em;
   }
 
   .about-me-box {
-    width: 488px;
+    width: 384px;
     margin-bottom: 232px;
   }
 
@@ -157,4 +162,14 @@ letter-spacing: 0.03em;
     width: 384px;
     margin-bottom: 0;
   }
+
+  #about-me {
+    background-size: 384px 288px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/bg-about-desk.png');
+  background-position-x: 810px;
+  background-position-y: 770px;
+  }
+  
 }
