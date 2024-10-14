@@ -97,7 +97,7 @@
 }
 
 #switch:checked + .label {
-  background-color: #2a2d32;
+  background-color: var(--black);
 }
 
 #switch:checked + .label::before {
@@ -143,9 +143,8 @@
 }
 
 .dark-theme .header-btn-icon {
-  fill: var(
-    --accet-green-dt
-  ); /* Білий колір іконки бургер-меню в темній темі */
+  stroke: var(--white-dt); /* Білий колір іконки бургер-меню в темній темі */
+  fill: inherit;
 }
 
 /* -------------------------------- */
@@ -237,28 +236,23 @@
   }
 }
 
-/* ------ Mobile menu ------ */
 .header-mobile-menu-container {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  /* background-color: rgba(46, 47, 66, 0.4); */
-  display: none;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: transform 0.6s ease;
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  z-index: 100;
 }
 
-.header-mobile-menu-container.is-open {
-  display: flex;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+/* Активне меню з'являється на екрані */
+.header-mobile-menu-container.active {
+  transform: translateX(-100%);
 }
 
 .header-mobile-menu {
@@ -269,57 +263,50 @@
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 320px;
-  /* min-height: 686px; */
-  /* width: 100%;
-  height: 100%; */
   min-height: 100vh;
   min-width: 100vw;
   background: var(--white);
-  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
   border-radius: 4px;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   transition: transform 0.25s ease-in-out;
-  /* padding: 20px; */
 }
+
 .dark-theme .header-mobile-menu {
   background: var(--black);
 }
 
 .header-mobile-menu-close {
-  /* position: absolute; */
-  top: 16px;
-  right: 34px;
-  /* width: 324px; */
-  height: 34px;
   display: flex;
   align-items: center;
   justify-content: end;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
   padding: 0;
   cursor: pointer;
   transition: transform 0.25s ease-in-out;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   border: none;
-  /* stroke: var(--black); */
   background: none;
+}
+
+.dark-theme .header-btn-icon {
+  background-color: var(--black);
+  border: none;
 }
 
 .dark-theme .header-mobile-menu-close {
   background-color: var(--black);
   border: none;
 }
-.header-mobile-menu-close-icon {
-  width: 24px;
-  height: 24px;
-  /* border-color: #fff; */
-  stroke-width: 2px;
-  /* stroke: var(--black); */
-  stroke: var(--accet-green);
+
+.menu-close-icon {
+  width: 32px;
+  height: 32px;
+  stroke: var(--black);
+  fill: var(--white);
+  stroke-width: 0;
 }
-.dark-theme .header-mobile-menu-close-icon {
+
+.dark-theme .menu-close-icon {
   stroke: var(--accet-green-dt);
 }
+
 .header-nav-menu-wrap {
   display: flex;
   justify-content: center;
@@ -328,8 +315,6 @@
   /* margin-bottom: 20px; */
   background-image: url(/img/bg-hero-mob_1x.png);
   background-repeat: no-repeat;
-  flex-grow: 1;
-  /* background-size: 320px 704px; */
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -345,21 +330,6 @@
   animation: burgerAnimation 0.4s;
 }
 
-/* .header-mobile-logo {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--black);
-  padding: 20px;
-} */
-
-/* .header-mobile-logo-tech {
-  color: var(--accet-green);
-} */
-
 /* -----  */
 .header-mobile-list {
   display: flex;
@@ -374,7 +344,6 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   transition: transform 0.25s ease-in-out;
 }
 
