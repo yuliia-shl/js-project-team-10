@@ -27,7 +27,7 @@
     <script type="module" crossorigin src="/js-project-team-10/index.js"></script>
     <link rel="modulepreload" crossorigin href="/js-project-team-10/assets/vendor-Cn2Mxqco.js">
     <link rel="stylesheet" crossorigin href="/js-project-team-10/assets/vendor-UVpLShSF.css">
-    <link rel="stylesheet" crossorigin href="/js-project-team-10/assets/index-DdwP1LtI.css">
+    <link rel="stylesheet" crossorigin href="/js-project-team-10/assets/index-DVBtrtmy.css">
   </head>
   <body>
     <header class="header-section">
@@ -80,14 +80,18 @@
           >Lloyd<span class="highlight">Jefferson.</span></a
         >
       </div>
-      <button class="header-mobile-menu-close js-close-menu">
-        <svg width="32" height="32" class="header-mobile-menu-close-icon">
+      <button
+        class="header-mobile-menu-close js-close-menu"
+        aria-label="Close menu"
+      >
+        <svg width="32" height="32" class="menu-close-icon">
           <use href="/js-project-team-10/assets/svg(2)-U5G4uNKe.svg#icon-close-btn-menu"></use>
         </svg>
       </button>
     </div>
     <div class="header-nav-menu-wrap">
-      <nav class="header-mobile-navigation">
+      <nav class="header-mobile-navigation" aria-labelledby="menu-title">
+        <!-- * aria-labelledby - атрибут для користувачів з особливими потребами -->
         <ul class="header-mobile-list">
           <li class="header-mobile-item">
             <a class="header-mobile-link" href="#about-me">About me</a>
