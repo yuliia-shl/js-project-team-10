@@ -82,7 +82,7 @@
     font-size: 108px;
   }
 
-  .about-me-info-cont{
+  .about-me-info-cont {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
@@ -98,68 +98,69 @@
     width: 336px;
   }
 
-.bio-text {
-  width: 336px;
-line-height: 1.5;
-letter-spacing: 0.03em;
-}
+  .bio-text {
+    width: 336px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
 
-.about-me-box {
-  
-  margin-bottom: 108px;
-}
+  .about-me-box {
 
-.last-box {
-  margin-bottom: 0;
-}
+    margin-bottom: 108px;
+  }
 
- .left {
-  width: 336px;
- }
+  .last-box {
+    margin-bottom: 0;
+  }
 
- .right {
-  width: 336px;
- }
+  .left {
+    width: 336px;
+  }
 
-.sub-title {
-  font-size: 36px;
-  line-height: 1.33;
-  letter-spacing: 0.01em;
-}
+  .right {
+    width: 336px;
+  }
 
-.about-me-list {
-  gap: 16px;
-}
+  .sub-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
 
-#about-me {
-  background-size: 336px 252px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('/img/bg-about-tab.png');
-background-position-x: 390px;
-background-position-y: 910px;
-}
+  .about-me-list {
+    gap: 16px;
+  }
 
-/* темна тема бекграунд */
-.dark-theme #about-me {
-  background-image: url('/img/bg-about-tab-dark.png')
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 2dppx),
-(min-resolution: 192dpi) {
   #about-me {
-    background-image: url(/img/bg-about-tab-2x.png);
+    background-size: 336px 252px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/bg-about-tab.png');
+    background-position-x: 390px;
+    background-position-y: 910px;
   }
 
+  /* темна тема бекграунд */
   .dark-theme #about-me {
-    background-image: url('/img/bg-about-tab-dark-2x.png')
+    background-image: url('/img/bg-about-tab-dark.png')
   }
 
-}
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    #about-me {
+      background-image: url('/img/bg-about-tab-2x.png');
+    }
+
+    .dark-theme #about-me {
+      background-image: url('/img/bg-about-tab-dark-2x.png')
+    }
+
+  }
 
 
 }
+
 @media screen and (min-width: 1280px) {
 
   .photo-card {
@@ -173,7 +174,7 @@ background-position-y: 910px;
     margin: 0;
   }
 
-  .about-me-info-cont{
+  .about-me-info-cont {
     gap: 0;
     column-gap: 136px;
     row-gap: 80px;
@@ -185,7 +186,7 @@ background-position-y: 910px;
   }
 
   .about-me-box {
-    
+
     margin-bottom: 232px;
   }
 
@@ -207,8 +208,8 @@ background-position-y: 910px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/img/bg-about-desk.png');
-  background-position-x: 810px;
-  background-position-y: 770px;
+    background-position-x: 810px;
+    background-position-y: 770px;
   }
 
   /* темна тема бекграунд */
@@ -217,17 +218,16 @@ background-position-y: 910px;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 2dppx),
-(min-resolution: 192dpi) {
-  #about-me {
-    background-image: url(/img/bg-about-desc-2x.png);
-  }
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    #about-me {
+      background-image: url('/img/bg-about-desc-2x.png');
+    }
 
-  .dark-theme #about-me {
-    background-image: url('/img/bg-about-desk-dark-2x.png')
+    .dark-theme #about-me {
+      background-image: url('/img/bg-about-desk-dark-2x.png')
+    }
+
   }
 
 }
-  
-}
-
