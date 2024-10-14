@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const loadMoreBtn = document.querySelector('.load-more');
+    const loadMoreBtn = document.querySelector('.load-more-container');
     const projectList = document.querySelector('.project-list');
     let hiddenItems = [
       `<li class="project-item">
@@ -277,31 +277,34 @@ document.addEventListener('DOMContentLoaded', function () {
 </li>`
     ];
   
-    let itemsToShow = 3; 
-    let currentIndex = 0;
-  
-    function loadMoreItems() {
-      const fragment = document.createDocumentFragment();
-      const remainingItems = hiddenItems.length - currentIndex;
-  
-      const items = hiddenItems.slice(currentIndex, currentIndex + Math.min(itemsToShow, remainingItems));
-  
-      items.forEach(item => {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = item;
-        fragment.appendChild(tempDiv.firstElementChild);
+    let loadedItems = 0;
+
+  loadMoreBtn.addEventListener('click', () => {
+    const nextItems = hiddenItems.slice(loadedItems, loadedItems + 3);
+    
+    if (nextItems.length > 0) {
+      const lastVisibleItem = projectList.children[projectList.children.length - 1];
+      
+      nextItems.forEach(itemHTML => {
+        const template = document.createElement('template');
+        template.innerHTML = itemHTML.trim();
+        const newItem = template.content.firstChild;
+        projectList.appendChild(newItem);
       });
-  
-      projectList.appendChild(fragment);
-      currentIndex += itemsToShow;
-  
-      if (currentIndex >= hiddenItems.length) {
-        loadMoreBtn.style.display = 'none';
-      }
+      
+      const firstNewItem = projectList.children[loadedItems];
+      const firstNewItemHeight = firstNewItem.getBoundingClientRect().height;
+
+      window.scrollBy({
+        top: firstNewItemHeight,  
+        behavior: 'smooth'
+      });
+
+      loadedItems += nextItems.length;
     }
-  
-    loadMoreBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      loadMoreItems();
-    });
+
+    if (loadedItems >= hiddenItems.length) {
+      loadMoreBtn.style.display = 'none';
+    }
   });
+});
