@@ -100,10 +100,6 @@
 @media only screen and (min-width: 1280px) {
     .faq-section {
         padding-bottom: 164px;
-        background-image: url('/img/bg-FAQ-desk.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
     .faq-section .container {
@@ -116,8 +112,15 @@
     .faq-title {
         max-width: 520px;
         margin-bottom: 0;
+        position: relative;
     }
 
+    .wrap {
+        background-image: url('/img/bg-FAQ-desk.png');
+        background-repeat: no-repeat;
+        background-size: 536px 422px;
+        background-position: top 540px left 22px;
+    }
     .faq-ac-container {
         max-width: 592px;
         margin-top: 276px;
@@ -134,7 +137,6 @@
 
 .dark-theme .faq-trigger-icon {
     stroke: var(--white);
-    fill: var(--white);
 }
 
 .dark-theme .faq-ac.is-active {
