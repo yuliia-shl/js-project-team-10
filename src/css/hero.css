@@ -204,6 +204,10 @@
 
 /* Dark theme */
 
+.hero-btn-arrow {
+  fill: var(--accet-green-dt);
+}
+
 .dark-theme .hero-btn-placeholder {
   background-color: var(--accet-green-dt);
 }
@@ -212,10 +216,10 @@
   background-color: var(--hover);
 }
 
-.hero-social-wrap {
+.dark-theme .hero-social-wrap {
   background-color: var(--charcoal-dt);
 }
 
-.hero-social-link:hover {
+.dark-theme .hero-social-link:hover {
   color: var(--accet-green-dt);
 }
