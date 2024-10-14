@@ -1,0 +1,118 @@
+/* ----- Benefits Section -----*/
+.benefits-title {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  /* max-width: 320px; */
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.benefits-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  stroke: var(--accet-green);
+  fill: none;
+}
+
+.benefits-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  stroke: var(--accent-green);
+  background-color: var(--light-accent);
+  padding: 12px;
+}
+
+/* ----- Dark theme -----  */
+.dark-theme .benefits-icon {
+  stroke: var(--accent-green-dt);
+  background: var(--dark-accet-dt);
+}
+
+.dark-theme .benefits-list-item {
+  stroke: var(--accet-green-dt);
+}
+
+/* ----- ----- */
+
+.benefits-list-item-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits-list-item-text {
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-title {
+    margin-bottom: 0;
+  }
+
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefits-list-item:first-child {
+    margin-left: 368px;
+  }
+
+  .benefits-list-item-title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .benefits-list-item-text {
+    max-width: 336px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefits-section {
+    padding-top: 0;
+  }
+
+  .benefits-title {
+    max-width: 690px;
+    /* min-width: 690px; */
+    /* padding-top: 116px; */
+    padding-bottom: 304px;
+  }
+
+  .benefits-container {
+    padding-top: 116px;
+    /* Перенесла паддінг на контейнер, глянь нижній */
+    position: relative;
+    background-image: url(/img/bg-benefits-work-desk.png);
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: bottom 384px right 32px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .benefits-container {
+      background-image: url(/img/bg-benefits-work-desk-2x.png);
+    }
+  }
+
+  .benefits-list-item-text {
+    max-width: 384px;
+  }
+
+  .benefits-list {
+    position: absolute;
+    top: 392px;
+  }
+
+  .benefits-list-item:first-child {
+    margin-left: 832px;
+  }
+}
