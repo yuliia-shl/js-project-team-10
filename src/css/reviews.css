@@ -1,173 +1,177 @@
+/* ----- Reviews styles */
 .reviews-title {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .reviews-container {
-    margin-right: 20px;
-    margin-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.reviews-list.swiper-wrapper {
-    margin-bottom: 32px;
+.reviews-list {
+  /* margin-bottom: 32px; */
+  margin-bottom: 24px;
 }
 
 .reviews-list-item.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
-    background: #2A2D32;
-    border-radius: 16px;
-    padding: 32px;
-    min-height: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  background: #2A2D32;
+  border-radius: 16px;
+  padding: 32px;
+  min-height: 224px;
 }
 
 .error-mock {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 20px;
-    padding: 15px;
-    height: 302px;
-    width: 100%;
-    align-content: center;
-    color: rgba(250, 250, 250, 0.6);
-    margin-bottom: 32px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 15px;
+  height: 302px;
+  width: 100%;
+  align-content: center;
+  color: rgba(250, 250, 250, 0.6);
+  margin-bottom: 32px;
 }
 
 .reviewers-avatar {
-    border-radius: 24px;
-    width: 40px;
-    height: 40px;
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .reviewers-name {
-    margin-left: 16px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: black;
+  /* margin-left: 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-family: var(--font-family); */
+  font-weight: 600;
+  font-size: 16px;
+  /* line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: black; */
 }
 
 .reviewer-info {
-    /* display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
   width: 528px;
   height: 40px; */
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .reviews-text {
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: black;
+  /* font-family: var(--font-family); */
+  font-weight: 300;
+  font-size: 16px;
+  /* line-height: 1.5; */
+  /* letter-spacing: 0.03em; */
+  /* color: black; */
 }
 
 .swiper-buttons {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    justify-content: flex-end;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-end;
 }
 
 .swiper-buttons button.review-button-prev,
 .swiper-buttons button.review-button-next {
-    cursor: pointer;
-    background-color: transparent;
-    transition: box-shadow 200ms linear;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    border: 1px solid var(--black);
-    border-radius: 8px;
-    padding: 12px;
-    width: 40px;
-    height: 40px;
-    fill: black;
+  cursor: pointer;
+  background-color: transparent;
+  transition: box-shadow 200ms linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  fill: var(--black);
 }
 
 .swiper-buttons button.review-button-prev .review-icon,
-.swiper-buttons button.review-button-next .review-icon{
-    stroke: #292929;
+.swiper-buttons button.review-button-next .review-icon {
+  stroke: #292929;
 }
 
 button.review-button-prev:not(:disabled):hover,
 button.review-button-next:not(:disabled):hover,
 button.review-button-prev:not(:disabled):hover,
 button.review-button-next:not(:disabled):hover {
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
 button.review-button-prev.swiper-button-disabled,
 button.review-button-next.swiper-button-disabled {
-    border: 1px solid var(--light-grey);
-    border-radius: 8px;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
 }
 
 button.review-button-prev.swiper-button-disabled .review-icon,
 button.review-button-next.swiper-button-disabled .review-icon {
-    stroke: lightgray;
+  stroke: var(--light-grey);
 }
 
 button.swiper-button-disabled {
-    cursor: default;
+  cursor: default;
 }
 
 .swiper-button-disabled .review-icon {
-    fill: transparent;
-    stroke: #3B3B3B;
+  fill: transparent;
+  stroke: #3B3B3B;
 }
 
 .review-icon {
-    fill: transparent;
-    stroke: #FFFFFF;
+  fill: transparent;
+  stroke: #FFFFFF;
 }
 
 .reviews-list-item.swiper-slide {
-    background: var(--light-grey);
+  background: var(--light-grey);
 }
 
 .dark-theme .reviews-list-item.swiper-slide {
-    background: var(--charcoal-dt);
+  background: var(--charcoal-dt);
 }
 
 .dark-theme .swiper-buttons button.review-button-prev,
 .dark-theme .swiper-buttons button.review-button-next {
-    border-color: white;
+  border-color: var(--white);
 }
+
 .dark-theme .swiper-buttons button.review-button-prev .review-icon,
-.dark-theme .swiper-buttons button.review-button-next .review-icon{
-    stroke: white;
+.dark-theme .swiper-buttons button.review-button-next .review-icon {
+  stroke: var(--white);
 }
+
 .dark-theme button.review-button-prev.swiper-button-disabled,
 .dark-theme button.review-button-next.swiper-button-disabled {
-    border-color: var(--charcoal-dt);
+  border-color: var(--charcoal-dt);
 }
+
 .dark-theme button.review-button-prev.swiper-button-disabled .review-icon,
 .dark-theme button.review-button-next.swiper-button-disabled .review-icon {
-    stroke: #2A2D32;
+  stroke: #2A2D32;
 }
+
 @media screen and (min-width: 768px) {
-.reviews-container {
-        margin-right: 32px;
-        margin-left: 32px;
-    }
+  .reviews-container {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
 }
 
-@media screen and (min-width: 1280px) {
-
-}
+@media screen and (min-width: 1280px) {}
