@@ -1,65 +1,69 @@
 <!-- =====   Section Let’s Work Together   ====== -->
 
 <section id="work-together" class="section">
-  <div class="container">
-    <h2>Let’s <span class="highlight">Work Together</span></h2>
-    <p class="uppercase">
-      Contact me to transform your ideas into exceptional solutions.
-    </p>
+  <div class="container lwt-container">
+    <div class="contact-wrapper">
+      <h2 class="title">Let’s <span class="highlight">Work Together</span></h2>
+      <p class="uppercase">
+        Contact me to transform your ideas into exceptional solutions.
+      </p>
 
-    <address class="contact-info">
-      <ul>
-        <li>
-          <!-- Icon for phone -->
-          <svg class="icon" width="24" height="24">
-            <use href="./img/icons.svg#icon-telephone"></use>
+      <address class="contact-info">
+        <ul>
+          <li>
+            <!-- Icon for phone -->
+            <svg class="icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-telephone"></use>
+            </svg>
+
+            <a href="tel:+380904567890">+38 090 456 78 90</a>
+          </li>
+          <li>
+            <!-- Icon for email -->
+
+            <svg class="icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-email"></use>
+            </svg>
+            <a href="mailto:lloydjefferson@gmail.com"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+          <li>
+            <!-- Icon fr location -->
+            <svg class="icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-location"></use>
+            </svg>
+            USA, New York
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <div class="form-container">
+      <form id="contactForm" action="#" method="post">
+        <div class="input-wrapper">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email*"
+            required
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <svg class="success-icon">
+            <use href="./img/icons.svg#icon-success-filled"></use>
           </svg>
-
-          <a href="tel:+380904567890">+38 090 456 78 90</a>
-        </li>
-        <li>
-          <!-- Icon for email -->
-
-          <svg class="icon" width="24" height="24">
-            <use href="./img/icons.svg#icon-email"></use>
-          </svg>
-
-          <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-        </li>
-        <li>
-          <!-- Icon fr location -->
-          <svg class="icon" width="24" height="24">
-            <use href="./img/icons.svg#icon-location"></use>
-          </svg>
-
-          USA, New York
-        </li>
-      </ul>
-    </address>
-
-    <form id="contactForm" action="#" method="post">
-      <div class="input-wrapper">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email*"
+          <span class="error-message">Check the address and try again!</span>
+        </div>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Message"
           required
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        />
-        <svg class="success-icon">
-          <use href="./img/icons.svg#icon-success-filled"></use>
-        </svg>
-        <span class="error-message">Check the address and try again!</span>
-      </div>
-      <textarea
-        id="message"
-        name="message"
-        placeholder="message"
-        required
-      ></textarea>
-      <button type="submit">SEND MESSAGE</button>
-    </form>
+        ></textarea>
+        <button class="form-btn" type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
   </div>
 </section>
 
