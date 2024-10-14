@@ -7,4 +7,5 @@ import { initHeader } from './js/menu.js';
 initHeader();
 
 import './js/faq.js';
-import './js/my-projects.js' ;
+import { menu } from './js/menu.js';
+import './js/my-projects.js';
