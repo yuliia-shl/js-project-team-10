@@ -1,5 +1,5 @@
 import { Swiper } from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import '../../node_modules/swiper/swiper-bundle.min.css';
 import axios from 'axios';
 document.addEventListener('DOMContentLoaded', renderReviews);
@@ -30,19 +30,16 @@ const swiperForReviews = new Swiper(refs.swiper, {
     1280: {
       slidesPerView: 2,
       spaceBetween: 32,
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-      },
     },
   },
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Keyboard],
   navigation: {
     nextEl: refs.swiperNext,
     prevEl: refs.swiperPrev,
   },
   keyboard: {
     enabled: true,
+    onlyInViewport: true,
   },
 });
 
