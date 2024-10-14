@@ -171,7 +171,7 @@
   background: var(--charcoal-dt);
 }
 
-.dark-theme .tech-marquee-bottom .tech-skill-text {
+.dark-theme .tech-marquee-bottom.tech-skill-text {
   color: var(--white-dt);
 }
 
