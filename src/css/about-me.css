@@ -130,3 +130,31 @@ letter-spacing: 0.03em;
 
 }
 }
+@media screen and (min-width: 1280px) {
+
+  .photo-card {
+    width: 384px;
+    margin-top: 272px;
+    height: 448px;
+  }
+
+  .about-me-info-cont{
+    gap: 0;
+    column-gap: 136px;
+    row-gap: 80px;
+  }
+
+  .bio-text {
+    width: 488px;
+  }
+
+  .about-me-box {
+    width: 488px;
+    margin-bottom: 232px;
+  }
+
+  .last-box {
+    width: 384px;
+    margin-bottom: 0;
+  }
+}
