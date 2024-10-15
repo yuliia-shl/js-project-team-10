@@ -46,7 +46,7 @@
 .project-btn {
   border-radius: 8px;
   padding: 12px 24px;
-  width: 125px;
+  min-width: 125px;
   height: 48px;
   display: inline-flex;
   justify-content: center;
