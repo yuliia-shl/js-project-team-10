@@ -76,7 +76,7 @@
 
 @media screen and (min-width: 1280px) {
   .benefits-section {
-    padding-top: 0;
+    padding-top: 116px;
   }
 
   .benefits-title {
@@ -84,8 +84,6 @@
   }
 
   .benefits-container {
-    padding-top: 116px;
-    padding-bottom: 304px;
     position: relative;
     background-image: url(/img/bg-benefits-work-desk.png);
     background-repeat: no-repeat;
