@@ -4,13 +4,10 @@
 }
 
 .photo-card {
-  width: 320px;
   border-radius: 16px;
 }
 
 .photo {
-  width: 320px;
-  height: 374px;
   border-radius: 16px;
 }
 
@@ -75,9 +72,7 @@
   color: var(--accet-green-dt);
 }
 
-
 @media screen and (min-width: 768px) {
-
   .about-me-title {
     font-size: 108px;
   }
@@ -105,7 +100,6 @@
   }
 
   .about-me-box {
-
     margin-bottom: 108px;
   }
 
@@ -142,27 +136,23 @@
 
   /* темна тема бекграунд */
   .dark-theme #about-me {
-    background-image: url('/img/bg-about-tab-dark.png')
+    background-image: url('/img/bg-about-tab-dark.png');
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     #about-me {
       background-image: url('/img/bg-about-tab-2x.png');
     }
 
     .dark-theme #about-me {
-      background-image: url('/img/bg-about-tab-dark-2x.png')
+      background-image: url('/img/bg-about-tab-dark-2x.png');
     }
-
   }
-
-
 }
 
 @media screen and (min-width: 1280px) {
-
   .photo-card {
     width: 384px;
     margin-top: 272px;
@@ -186,7 +176,6 @@
   }
 
   .about-me-box {
-
     margin-bottom: 232px;
   }
 
@@ -214,20 +203,18 @@
 
   /* темна тема бекграунд */
   .dark-theme #about-me {
-    background-image: url('/img/bg-about-desk-dark.png')
+    background-image: url('/img/bg-about-desk-dark.png');
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     #about-me {
       background-image: url('/img/bg-about-desc-2x.png');
     }
 
     .dark-theme #about-me {
-      background-image: url('/img/bg-about-desk-dark-2x.png')
+      background-image: url('/img/bg-about-desk-dark-2x.png');
     }
-
   }
-
 }
