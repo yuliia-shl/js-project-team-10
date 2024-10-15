@@ -2,8 +2,10 @@ import { Swiper } from 'swiper';
 import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import '../../node_modules/swiper/swiper-bundle.min.css';
 import axios from 'axios';
-document.addEventListener('DOMContentLoaded', renderReviews);
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
+document.addEventListener('DOMContentLoaded', renderReviews);
 export const refs = {
   swiper: document.querySelector('.reviews-container'),
   swiperNext: document.querySelector('.review-button-next'),
@@ -21,11 +23,9 @@ const swiperForReviews = new Swiper(refs.swiper, {
   },
   slidesPerView: 1,
   spaceBetween: 16,
-  autoHeight: true,
   breakpoints: {
     768: {
       slidesPerView: 1,
-      autoHeight: false,
     },
     1280: {
       slidesPerView: 2,
@@ -44,11 +44,16 @@ const swiperForReviews = new Swiper(refs.swiper, {
 });
 
 async function getReviews() {
-  const response = (
-    await axios.get('https://portfolio-js.b.goit.study/api/reviews')
-  ).data;
-  return response;
+  const response = await axios.get(
+    'https://portfolio-js.b.goit.study/api/reviews'
+  );
+  if (response.status !== 200) {
+    throw new Error(`Request failed with status ${response.status}`);
+  }
+  return response.data;
 }
+
+let hasError = false; // Змінна для відстеження помилки
 
 async function renderReviews() {
   try {
@@ -58,7 +63,7 @@ async function renderReviews() {
         return `<li class="reviews-list-item swiper-slide">
                     <p class="reviews-text">${review}</p>
                     <div class="reviewer-info">
-                        <img class="reviewers-avatar" src="${avatar_url}" alt=" ${author} photo" loading="lazy" />
+                        <img class="reviewers-avatar" src="${avatar_url}" alt=" ${author}'s photo" loading="lazy" />
                         <h3 class="reviewers-name">${author}</h3>
                     </div>
                 </li>`;
@@ -66,9 +71,33 @@ async function renderReviews() {
       .join('');
     refs.reviewsList.insertAdjacentHTML('beforeend', markup);
   } catch (error) {
+    hasError = true; // Встановлюємо прапорець, якщо сталася помилка
     refs.reviewsList.insertAdjacentHTML(
       'beforeend',
-      '<li class="error-mock"><p>SORRY, NOTHING TO SHOW HERE</p></li>'
+      '<li class="error-mock swiper-slide"><p>Not found</p></li>'
     );
+    console.error('Error fetching or rendering reviews:', error);
   }
 }
+
+// Функція для показу інформаційного вікна
+function showErrorMessage() {
+  if (hasError) {
+    iziToast.error({
+      message: 'No reviews were found! Please try again later.',
+      position: 'bottomRight',
+    });
+  }
+}
+
+// Відстежуємо, коли секція відгуків стає видимою
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      showErrorMessage();
+    }
+  });
+});
+
+// Відстежуємо контейнер, в якому знаходяться відгуки
+observer.observe(refs.swiper);
