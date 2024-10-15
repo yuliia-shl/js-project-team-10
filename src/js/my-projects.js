@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">ENERGY FLOW WEBSERVICE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" class="project-btn" target="_blank">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-arrow-up">
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">STARLIGHT STUDIO LANDING PAGE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" class="project-btn" target="_blank">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-arrow-up">
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">FRUITBOX ONLINE STORE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" class="project-btn" target="_blank">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-arrow-up">
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">CHEGO JEWELRY WEBSITE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" class="project-btn" target="_blank">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-arrow-up">
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">MIMINO WEBSITE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" class="project-btn" target="_blank">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-arrow-up">
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">VYSHYVANKA VIBES LANDING PAGE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" class="project-btn" target="_blank">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-arrow-up">
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">POWER PULSE WEBSERVICE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" class="project-btn" target="_blank">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="./img/icons.svg#icon-arrow-up">
