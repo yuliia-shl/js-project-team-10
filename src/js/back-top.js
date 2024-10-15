@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 
 // Плавне повернення догори при натисканні
 function slowScrollToTop() {
-  const scrollSpeed = 10; // Менше значення робить прокручування повільнішим
+  const scrollSpeed = 50; // Менше значення робить прокручування повільнішим
   const currentScroll = window.scrollY;
 
   if (currentScroll > 0) {
