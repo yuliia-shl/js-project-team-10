@@ -279,14 +279,14 @@ input:valid + .success-icon {
   display: block;
   border: 1px solid var(--accet-green);
   border: none;
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
 }
 
 input:valid {
   outline: none;
   border-color: var(--hover-grey);
   box-shadow: none;
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
 }
 
 textarea:valid {
@@ -302,6 +302,11 @@ input:invalid + .success-icon {
 
 input:valid + .success-icon + .error-message {
   display: none;
+}
+
+input:-webkit-autofill {
+  background-color: var(--light-grey) !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--light-grey) inset;
 }
 
 /* Попап */
@@ -419,4 +424,12 @@ input:valid + .success-icon + .error-message {
 
 .dark-theme .popup-content h3 {
   color: var(--accet-green-dt);
+}
+
+/* Для Chrome, Safari та інших браузерів на основі WebKit */
+.dark-theme input:-webkit-autofill {
+  background-color: var(--charcoal-dt) !important;
+  color: var(--white-dt) !important;
+  -webkit-text-fill-color: var(--white-dt) !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--charcoal-dt) inset;
 }
