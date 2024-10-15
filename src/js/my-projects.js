@@ -46,24 +46,24 @@ document.addEventListener('DOMContentLoaded', function () {
           <picture>
           <source
           media="(min-width: 1280px)"
-          srcset="/img/webp/my-project-5-desk_1x.webp 1x,
-          /img/webp/my-project-5-desk_2x.webp 2x"
+          srcset="./img/webp/my-project-5-desk_1x.webp 1x,
+          ./img/webp/my-project-5-desk_2x.webp 2x"
           type="image/webp"
           />
           <source
           media="(min-width: 768px)"
-          srcset="/img/webp/my-project-5-tab_1x.webp 1x,
-          /img/webp/my-project-5-tab_2x.webp 2x"
+          srcset="./img/webp/my-project-5-tab_1x.webp 1x,
+          ./img/webp/my-project-5-tab_2x.webp 2x"
           type="image/webp"
           />
           <source
           media="(min-width: 360px)"
-          srcset="/img/webp/my-project-5-mob_1x.webp 1x,
-          /img/webp/my-project-5-mob_2x.webp 2x"
+          srcset="./img/webp/my-project-5-mob_1x.webp 1x,
+          ./img/webp/my-project-5-mob_2x.webp 2x"
           type="image/webp"
           />
           <img
-            src="/img/webp/my-project-5-mob_1x.webp"
+            src="./img/webp/my-project-5-mob_1x.webp"
             alt="Starlight Studio Landing Page"
             loading="lazy"
             class="project-img"
@@ -86,24 +86,24 @@ document.addEventListener('DOMContentLoaded', function () {
           <picture>
           <source
           media="(min-width: 1280px)"
-          srcset="/img/webp/my-project-6-desk_1x.webp 1x,
-          /img/webp/my-project-6-desk_2x.webp 2x"
+          srcset="./img/webp/my-project-6-desk_1x.webp 1x,
+          ./img/webp/my-project-6-desk_2x.webp 2x"
           type="image/webp"
           />
           <source
           media="(min-width: 768px)"
-          srcset="/img/webp/my-project-6-tab_1x.webp 1x,
-          /img/webp/my-project-6-tab_2x.webp 2x"
+          srcset="./img/webp/my-project-6-tab_1x.webp 1x,
+          ./img/webp/my-project-6-tab_2x.webp 2x"
           type="image/webp"
           />
           <source
           media="(min-width: 360px)"
-          srcset="/img/webp/my-project-6-mob_1x.webp 1x,
-          /img/webp/my-project-6-mob_2x.webp 2x"
+          srcset="./img/webp/my-project-6-mob_1x.webp 1x,
+          ./img/webp/my-project-6-mob_2x.webp 2x"
           type="image/webp"
           />
           <img
-            src="/img/webp/my-project-6-mob_1x.webp"
+            src="./img/webp/my-project-6-mob_1x.webp"
             alt="Fruitbox Online Store"
             loading="lazy"
             class="project-img"
