@@ -26,23 +26,24 @@ export const initHeader = () => {
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
   });
-  document.querySelectorAll('a[href^="#"').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      let href = this.getAttribute('href').substring(1);
-      const scrollTarget = document.getElementById(href);
-      const topOffset =
-        document.querySelector('.header-navigation').offsetHeight;
-      const elementPosition = scrollTarget.getBoundingClientRect().top;
-      const offsetPosition = elementPosition - topOffset;
-      window.scrollBy({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    });
-  });
 
-  // Theme
+  // document.querySelectorAll('a[href^="#"').forEach(link => {
+  //   link.addEventListener('click', function (e) {
+  //     e.preventDefault();
+  //     let href = this.getAttribute('href').substring(1);
+  //     const scrollTarget = document.getElementById(href);
+  //     const topOffset =
+  //       document.querySelector('.header-navigation').offsetHeight;
+  //     const elementPosition = scrollTarget.getBoundingClientRect().top;
+  //     const offsetPosition = elementPosition - topOffset;
+  //     window.scrollBy({
+  //       top: offsetPosition,
+  //       behavior: 'smooth',
+  //     });
+  //   });
+  // });
+
+  // Dark/White Themes
   const themeToggle = document.getElementById('switch');
 
   themeToggle.addEventListener('change', () => {
@@ -62,49 +63,43 @@ export const initHeader = () => {
       themeToggle.checked = true;
     }
   });
-
-  // let checkbox = document.querySelector('#switch');
-  // let body = document.querySelector('body');
-  // let localStorageTheme = localStorage.getItem('theme');
-  // const setThemeColor = () => {
-  //   localStorageTheme === 'dark' ? setDarkMode() : setLightMode();
-  // };
-  // const checkModeSeting = () => {
-  //   window
-  //     .matchMedia('(prefers-color-scheme: dark')
-  //     .addEventListener('change', () => {
-  //       checkThemeChange();
-  //     });
-  // };
-  // const checkThemeChange = () => {
-  //   if (
-  //     localStorageTheme == null &&
-  //     window.matchMedia('(prefers-color-scheme: dark').matches
-  //   ) {
-  //     setDarkMode();
-  //   } else if (
-  //     localStorageTheme &&
-  //     window.matchMedia('(prefers-color-scheme: dark').matches
-  //   ) {
-  //     setDarkMode();
-  //   } else {
-  //     setLightMode();
-  //   }
-  // };
-  // const setDarkMode = () => {
-  //   body.classList = 'dark';
-  //   localStorage.setItem('theme', 'dark');
-  //   checkbox.checked = true;
-  // };
-  // const setLightMode = () => {
-  //   body.classList = 'light';
-  //   localStorage.setItem('theme', 'light');
-  //   checkbox.checked = false;
-  // };
-  // checkModeSeting();
-  // checkThemeChange();
-  // setThemeColor();
-  // checkbox.addEventListener('click', () =>
-  //   checkbox.checked ? setDarkMode() : setLightMode()
-  // );
 };
+
+/* =====   menu options   ===== */
+
+export const menu = document.addEventListener('DOMContentLoaded', function () {
+  const openMenuButton = document.querySelector('.js-open-menu');
+  const closeMenuButton = document.querySelector('.js-close-menu');
+  const menuContainer = document.getElementById('mobile-menu');
+  const menuLinks = document.querySelectorAll('.header-mobile-link');
+
+  // Відкриває меню
+  openMenuButton.addEventListener('click', function () {
+    menuContainer.classList.add('active');
+    openMenuButton.setAttribute('aria-expanded', 'true');
+  });
+
+  // Закриває меню
+  closeMenuButton.addEventListener('click', function () {
+    menuContainer.classList.remove('active');
+    openMenuButton.setAttribute('aria-expanded', 'false');
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      menuContainer.classList.remove('active');
+      openMenuButton.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Закриває меню при кліку поза межами меню
+  document.addEventListener('click', function (event) {
+    if (
+      !menuContainer.contains(event.target) &&
+      !openMenuButton.contains(event.target)
+    ) {
+      menuContainer.classList.remove('active');
+      openMenuButton.setAttribute('aria-expanded', 'false');
+    }
+  });
+});

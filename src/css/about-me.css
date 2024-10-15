@@ -70,6 +70,10 @@
   top: 50%;
 }
 
+/* темна тема маркери */
+.dark-theme .list-marker {
+  color: var(--accet-green-dt);
+}
 
 
 @media screen and (min-width: 768px) {
@@ -78,7 +82,7 @@
     font-size: 108px;
   }
 
-  .about-me-info-cont{
+  .about-me-info-cont {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
@@ -94,39 +98,136 @@
     width: 336px;
   }
 
-.bio-text {
-  width: 336px;
-line-height: 1.5;
-letter-spacing: 0.03em;
+  .bio-text {
+    width: 336px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  .about-me-box {
+
+    margin-bottom: 108px;
+  }
+
+  .last-box {
+    margin-bottom: 0;
+  }
+
+  .left {
+    width: 336px;
+  }
+
+  .right {
+    width: 336px;
+  }
+
+  .sub-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .about-me-list {
+    gap: 16px;
+  }
+
+  #about-me {
+    background-size: 336px 252px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/bg-about-tab.png');
+    background-position-x: 390px;
+    background-position-y: 910px;
+  }
+
+  /* темна тема бекграунд */
+  .dark-theme #about-me {
+    background-image: url('/img/bg-about-tab-dark.png')
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    #about-me {
+      background-image: url('/img/bg-about-tab-2x.png');
+    }
+
+    .dark-theme #about-me {
+      background-image: url('/img/bg-about-tab-dark-2x.png')
+    }
+
+  }
+
+
 }
 
-.about-me-box {
-  width: 336px;
-  margin-bottom: 108px;
-}
+@media screen and (min-width: 1280px) {
 
-.last-box {
-  margin-bottom: 0;
-}
+  .photo-card {
+    width: 384px;
+    margin-top: 272px;
+    height: 448px;
+  }
 
-.sub-title {
-  font-size: 36px;
-  line-height: 1.33;
-  letter-spacing: 0.01em;
-}
+  .photo {
+    width: 384px;
+    margin: 0;
+  }
 
-.about-me-list {
-  gap: 16px;
-}
+  .about-me-info-cont {
+    gap: 0;
+    column-gap: 136px;
+    row-gap: 80px;
+    justify-content: end;
+  }
 
-#about-me {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('/img/bg-about-tab.png');
-  background-size: 43vw 30vh;
-  background-position-x: 50vw;
-  background-position-y: 140vh;
+  .bio-text {
+    width: 488px;
+  }
 
-}
+  .about-me-box {
+
+    margin-bottom: 232px;
+  }
+
+  .last-box {
+    width: 384px;
+    margin-bottom: 0;
+  }
+
+  .left {
+    width: 384px;
+  }
+
+  .right {
+    width: 488px;
+  }
+
+  #about-me {
+    background-size: 384px 288px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/bg-about-desk.png');
+    background-position-x: 810px;
+    background-position-y: 770px;
+  }
+
+  /* темна тема бекграунд */
+  .dark-theme #about-me {
+    background-image: url('/img/bg-about-desk-dark.png')
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    #about-me {
+      background-image: url('/img/bg-about-desc-2x.png');
+    }
+
+    .dark-theme #about-me {
+      background-image: url('/img/bg-about-desk-dark-2x.png')
+    }
+
+  }
+
 }
