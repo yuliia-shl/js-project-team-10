@@ -1,5 +1,6 @@
 #hero {
-  padding-top: 16px;
+  padding-top: 112px;
+  padding-bottom: 0;
   background-image: url(/img/bg-hero-mob_1x.png);
   background-repeat: no-repeat;
 }
@@ -13,9 +14,7 @@
 }
 
 .hero-container {
-  padding-top: 96px;
-  padding-bottom: 56px;
-  margin-bottom: 16px;
+  margin-bottom: 72px;
 }
 
 .hero-title {
@@ -73,7 +72,8 @@
 }
 
 .hero-social-wrap {
-  padding: 32px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: var(--light-grey);
 }
 
@@ -82,12 +82,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+}
+
+.hero-social-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .hero-social-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
   font-weight: 300;
   transition: color 0.25s ease-in-out;
 }
