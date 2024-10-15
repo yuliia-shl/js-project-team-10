@@ -58,12 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
     <source media="(min-width:1280px)" srcset="${pathImagesDesk1x} 1x, ${pathImagesDesk2x} 2x" type="image/webp" />
     <source media="(min-width:768px)" srcset="${pathImagesTab1x} 1x, ${pathImagesTab2x} 2x" type="image/webp" />
     <source media="(min-width:320px)" srcset="${pathImagesMob1x} 1x, ${pathImagesMob2x} 2x" type="image/webp" />
-    <img src="${pathImagesMob1x}" srcset="${pathImagesMob1x} 1x, ${pathImagesMob2x} 2x" alt="Project 4" loading="lazy" class="project-img" />
+    <img width: 1008px;
+height: 580px src="${pathImagesMob1x}" srcset="${pathImagesMob1x} 1x, ${pathImagesMob2x} 2x" alt="Project 4" loading="lazy" class="project-img" />
   </picture>
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">ENERGY FLOW WEBSERVICE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" target="blank"
+ class="project-btn">Visit 
               <span class="arrow">
               <svg class="highlight" width="24" height="24">
                   <use href="${pathIcons}#icon-arrow-up">
@@ -77,12 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <source media="(min-width:1280px)" srcset="${pathImagesDesk1x_2} 1x, ${pathImagesDesk2x_2} 2x" type="image/webp" />
     <source media="(min-width:768px)" srcset="${pathImagesTab1x_2} 1x, ${pathImagesTab2x_2} 2x" type="image/webp" />
     <source media="(min-width:320px)" srcset="${pathImagesMob1x_2} 1x, ${pathImagesMob2x_2} 2x" type="image/webp" />
-    <img src="${pathImagesMob1x_2}" srcset="${pathImagesMob1x_2} 1x, ${pathImagesMob2x_2} 2x" alt="Project 5" loading="lazy" class="project-img" />
+    <img width: 1008px;
+height: 580px; src="${pathImagesMob1x_2}" srcset="${pathImagesMob1x_2} 1x, ${pathImagesMob2x_2} 2x" alt="Project 5" loading="lazy"  class="project-img" />
   </picture>
 <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">STARLIGHT STUDIO LANDING PAGE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" target="blank" class="project-btn">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="${pathIcons}#icon-arrow-up">
@@ -96,12 +99,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <source media="(min-width:1280px)" srcset="${pathImagesDesk1x_3} 1x, ${pathImagesDesk2x_3} 2x" type="image/webp" />
     <source media="(min-width:768px)" srcset="${pathImagesTab1x_3} 1x, ${pathImagesTab2x_3} 2x" type="image/webp" />
     <source media="(min-width:320px)" srcset="${pathImagesMob1x_3} 1x, ${pathImagesMob2x_3} 2x" type="image/webp" />
-    <img src="${pathImagesMob1x_3}" srcset="${pathImagesMob1x_3} 1x, ${pathImagesMob2x_3} 2x" alt="Project 6" loading="lazy" class="project-img" />
+    <img width: 1008px;
+height: 580px; src="${pathImagesMob1x_3}" srcset="${pathImagesMob1x_3} 1x, ${pathImagesMob2x_3} 2x" alt="Project 6" loading="lazy" class="project-img" />
   </picture>
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">FRUITBOX ONLINE STORE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" target="blank" class="project-btn">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="${pathIcons}#icon-arrow-up">
@@ -115,12 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <source media="(min-width:1280px)" srcset="${pathImagesDesk1x_4} 1x, ${pathImagesDesk2x_4} 2x" type="image/webp" />
     <source media="(min-width:768px)" srcset="${pathImagesTab1x_4} 1x, ${pathImagesTab2x_4} 2x" type="image/webp" />
     <source media="(min-width:320px)" srcset="${pathImagesMob1x_4} 1x, ${pathImagesMob2x_4} 2x" type="image/webp" />
-    <img src="${pathImagesMob1x_4}" srcset="${pathImagesMob1x_4} 1x, ${pathImagesMob2x_4} 2x" alt="Project 7" loading="lazy" class="project-img" />
+    <img width: 1008px;
+height: 580px; src="${pathImagesMob1x_4}" srcset="${pathImagesMob1x_4} 1x, ${pathImagesMob2x_4} 2x" alt="Project 7" loading="lazy" class="project-img" />
   </picture>
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">CHEGO JEWELRY WEBSITE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" target="blank" class="project-btn">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="${pathIcons}#icon-arrow-up">
@@ -134,12 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <source media="(min-width:1280px)" srcset="${pathImagesDesk1x_5} 1x, ${pathImagesDesk2x_5} 2x" type="image/webp" />
     <source media="(min-width:768px)" srcset="${pathImagesTab1x_5} 1x, ${pathImagesTab2x_5} 2x" type="image/webp" />
     <source media="(min-width:320px)" srcset="${pathImagesMob1x_5} 1x, ${pathImagesMob2x_5} 2x" type="image/webp" />
-    <img src="${pathImagesMob1x_5}" srcset="${pathImagesMob1x_5} 1x, ${pathImagesMob2x_5} 2x" alt="Project 8" loading="lazy" class="project-img" />
+    <img width: 1008px;
+height: 580px; src="${pathImagesMob1x_5}" srcset="${pathImagesMob1x_5} 1x, ${pathImagesMob2x_5} 2x" alt="Project 8" loading="lazy" class="project-img" />
   </picture>
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">MIMINO WEBSITE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" target="blank" class="project-btn">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="${pathIcons}#icon-arrow-up">
@@ -153,12 +159,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <source media="(min-width:1280px)" srcset="${pathImagesDesk1x_6} 1x, ${pathImagesDesk2x_6} 2x" type="image/webp" />
     <source media="(min-width:768px)" srcset="${pathImagesTab1x_6} 1x, ${pathImagesTab2x_6} 2x" type="image/webp" />
     <source media="(min-width:320px)" srcset="${pathImagesMob1x_6} 1x, ${pathImagesMob2x_6} 2x" type="image/webp" />
-    <img src="${pathImagesMob1x_6}" srcset="${pathImagesMob1x_6} 1x, ${pathImagesMob2x_6} 2x" alt="Project 9" loading="lazy" class="project-img" />
+    <img width: 1008px;
+height: 580px src="${pathImagesMob1x_6}" srcset="${pathImagesMob1x_6} 1x, ${pathImagesMob2x_6} 2x" alt="Project 9" loading="lazy" class="project-img" />
   </picture>
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">VYSHYVANKA VIBES LANDING PAGE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" target="blank" class="project-btn">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="${pathIcons}#icon-arrow-up">
@@ -172,12 +179,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <source media="(min-width:1280px)" srcset="${pathImagesDesk1x_7} 1x, ${pathImagesDesk2x_7} 2x" type="image/webp" />
     <source media="(min-width:768px)" srcset="${pathImagesTab1x_7} 1x, ${pathImagesTab2x_7} 2x" type="image/webp" />
     <source media="(min-width:320px)" srcset="${pathImagesMob1x_7} 1x, ${pathImagesMob2x_7} 2x" type="image/webp" />
-    <img src="${pathImagesMob1x_7}" srcset="${pathImagesMob1x_7} 1x, ${pathImagesMob2x_7} 2x" alt="Project 10" loading="lazy" class="project-img" />
+    <img width: 1008px;
+height: 580px; src="${pathImagesMob1x_7}" srcset="${pathImagesMob1x_7} 1x, ${pathImagesMob2x_7} 2x" alt="Project 10" loading="lazy" class="project-img" />
   </picture>
           <p class="project-tech">React, JavaScript, Node JS, Git</p>
           <div class="tab-link-container">
             <h3 class="project-subtitle">POWER PULSE WEBSERVICE</h3>
-            <a href="#" class="project-btn">Visit 
+            <a href="#" target="blank" class="project-btn">Visit 
               <span class="arrow">
               <svg width="24" height="24">
                   <use href="${pathIcons}#icon-arrow-up">
