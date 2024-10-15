@@ -23,6 +23,7 @@
 
 .icon-container {
   position: relative;
+  margin: auto;
 }
 
 .switch-container {
@@ -146,6 +147,10 @@
   display: none;
 }
 
+.header-item {
+  display: inline-block;
+}
+
 .header-btn {
   display: flex;
   align-items: center;
@@ -208,6 +213,7 @@
   }
 
   .header-link {
+    display: inline-block;
     font-weight: 300;
     font-size: 16px;
     transition: color 0.25s ease-in-out;
