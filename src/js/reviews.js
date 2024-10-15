@@ -2,8 +2,10 @@ import { Swiper } from 'swiper';
 import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import '../../node_modules/swiper/swiper-bundle.min.css';
 import axios from 'axios';
-document.addEventListener('DOMContentLoaded', renderReviews);
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
+document.addEventListener('DOMContentLoaded', renderReviews);
 export const refs = {
   swiper: document.querySelector('.reviews-container'),
   swiperNext: document.querySelector('.review-button-next'),
@@ -90,7 +92,11 @@ async function renderReviews() {
 // Функція для показу інформаційного вікна
 function showErrorMessage() {
   if (hasError) {
-    alert('An error occurred while loading reviews. Try again later.');
+    iziToast.error({
+      message: 'No reviews were found :-(  ! Please try again later.',
+      position: 'topRight',
+    });
+    // alert('An error occurred while loading reviews. Try again later.');
   }
 }
 
