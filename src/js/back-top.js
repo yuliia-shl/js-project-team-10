@@ -11,9 +11,16 @@ window.addEventListener('scroll', () => {
 });
 
 // Плавне повернення догори при натисканні
+function slowScrollToTop() {
+  const scrollSpeed = 10; // Менше значення робить прокручування повільнішим
+  const currentScroll = window.scrollY;
+
+  if (currentScroll > 0) {
+    window.scrollTo(0, currentScroll - scrollSpeed);
+    requestAnimationFrame(slowScrollToTop);
+  }
+}
+
 backToTopButton.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
+  slowScrollToTop();
 });
