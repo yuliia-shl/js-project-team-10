@@ -15,12 +15,10 @@
   margin-bottom: 60px;
 }
 
-
 .project-item {
   display: flex;
   flex-direction: column;
   border-radius: 16px;
-  width: 320px;
 }
 
 .project-img {
@@ -92,7 +90,7 @@
   margin: 0 auto;
   width: 154px;
   cursor: pointer;
-  padding: 12px 24px ;
+  padding: 12px 24px;
 }
 
 .load-more-container:hover,
@@ -121,7 +119,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .project-list {
     grid-template-columns: repeat(1, 1fr);
     gap: 60px;
@@ -168,7 +165,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-
   #my-projects {
     padding-bottom: 48px;
   }
@@ -194,7 +190,6 @@
     width: 165px;
   }
 }
-
 
 /* Dark theme styles */
 
