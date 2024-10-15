@@ -137,7 +137,6 @@
 
 .dark-theme .faq-trigger-icon {
     stroke: var(--white);
-    fill: var(--white);
 }
 
 .dark-theme .faq-ac.is-active {
