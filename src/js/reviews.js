@@ -43,12 +43,24 @@ const swiperForReviews = new Swiper(refs.swiper, {
   },
 });
 
+// async function getReviews() {
+//   const response = (
+//     await axios.get('https://portfolio-js.b.goit.study/api/reviews')
+//   ).data;
+//   return response;
+// }
+
 async function getReviews() {
-  const response = (
-    await axios.get('https://portfolio-js.b.goit.study/api/reviews')
-  ).data;
-  return response;
+  const response = await axios.get(
+    'https://portfolio-js.b.goit.study/api/review'
+  );
+  if (response.status !== 200) {
+    throw new Error(`Request failed with status ${response.status}`);
+  }
+  return response.data;
 }
+
+let hasError = false; // Змінна для відстеження помилки
 
 async function renderReviews() {
   try {
@@ -66,9 +78,30 @@ async function renderReviews() {
       .join('');
     refs.reviewsList.insertAdjacentHTML('beforeend', markup);
   } catch (error) {
+    hasError = true; // Встановлюємо прапорець, якщо сталася помилка
     refs.reviewsList.insertAdjacentHTML(
       'beforeend',
-      '<li class="error-mock"><p>SORRY, NOTHING TO SHOW HERE</p></li>'
+      '<li class="error-mock swiper-slide"><p>Not found</p></li>'
     );
+    console.error('Error fetching or rendering reviews:', error);
   }
 }
+
+// Функція для показу інформаційного вікна
+function showErrorMessage() {
+  if (hasError) {
+    alert('An error occurred while loading reviews. Try again later.');
+  }
+}
+
+// Відстежуємо, коли секція відгуків стає видимою
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      showErrorMessage();
+    }
+  });
+});
+
+// Відстежуємо контейнер, в якому знаходяться відгуки
+observer.observe(refs.swiper);
