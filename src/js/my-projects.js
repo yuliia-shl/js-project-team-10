@@ -6,24 +6,24 @@ document.addEventListener('DOMContentLoaded', function () {
       <picture>
           <source
           media="(min-width: 1280px)"
-          srcset="/img/webp/my-project-4-desk_1x.webp 1x,
-          /img/webp/my-project-4-desk_2x.webp 2x"
+          srcset="./img/webp/my-project-4-desk_1x.webp 1x,
+          ./img/webp/my-project-4-desk_2x.webp 2x"
           type="image/webp"
           /> 
           <source
           media="(min-width: 768px)"
-          srcset="/img/webp/my-project-4-tab_1x.webp 1x,
-          /img/webp/my-project-4-tab_2x.webp 2x"
+          srcset="./img/webp/my-project-4-tab_1x.webp 1x,
+          ./img/webp/my-project-4-tab_2x.webp 2x"
           type="image/webp"
           />
           <source
           media="(min-width: 360px)"
-          srcset="/img/webp/my-project-4-mob_1x.webp 1x,
-          /img/webp/my-project-4-mob_2x.webp 2x"
+          srcset="./img/webp/my-project-4-mob_1x.webp 1x,
+          ./img/webp/my-project-4-mob_2x.webp 2x"
           type="image/webp"
           />
         <img
-            src="/img/webp/my-project-4-mob_1x.webp"
+            src="./img/webp/my-project-4-mob_1x.webp"
             alt="Energy Flow Webservice "
             loading="lazy"
             class="project-img"
