@@ -76,16 +76,18 @@
 
 @media screen and (min-width: 1280px) {
   .benefits-section {
-    padding-top: 0;
+    /* padding-top: 0; */
+    padding-top: 116px;
   }
 
   .benefits-title {
-    max-width: 690px;
+    /* max-width: 690px; */
+    width: 681px;
   }
 
   .benefits-container {
-    padding-top: 116px;
-    padding-bottom: 304px;
+    /* padding-top: 116px; */
+    /* padding-bottom: 304px; */
     position: relative;
     background-image: url(/img/bg-benefits-work-desk.png);
     background-repeat: no-repeat;
@@ -94,19 +96,29 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-rezolution: 2dppx),
-    (min-rezolution: 192dpi) {
+  (min-rezolution: 2dppx),
+  (min-rezolution: 192dpi) {
     .benefits-container {
       background-image: url(/img/bg-benefits-work-desk-2x.png);
     }
+  }
+
+  .benefits-list {
+    margin-top: 16px;
   }
 
   .benefits-list-item-text {
     max-width: 384px;
   }
 
-  .benefits-list {
+  .benefits-list-item:first-child {
     position: absolute;
+    top: 0;
+    margin-right: auto;
+  }
+
+  .benefits-list {
+    /* position: absolute; */
     top: 392px;
   }
 
