@@ -9,3 +9,4 @@ initHeader();
 import './js/faq.js';
 import { menu } from './js/menu.js';
 import './js/my-projects.js';
+import { backToTopButton } from './js/back-top.js';
