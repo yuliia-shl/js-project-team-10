@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .header-logo {
@@ -80,6 +79,10 @@
   -o-transition: 0.8s ease;
 }
 
+.dark-theme .label::before {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 55% 25px);
+}
+
 .fa-sun,
 .fa-moon {
   font-size: 1.3rem;
@@ -96,11 +99,11 @@
   right: 9%;
 }
 
-#switch:checked+.label {
+#switch:checked + .label {
   background-color: var(--black);
 }
 
-#switch:checked+.label::before {
+#switch:checked + .label::before {
   content: '';
   -webkit-transform: translateX(25px);
   -ms-transform: translateX(25px);
@@ -115,15 +118,15 @@
   background-position: center;
 }
 
-#switch:checked+.label .fa-sun {
+#switch:checked + .label .fa-sun {
   left: 11%;
 }
 
-#switch:checked+.label .fa-moon {
+#switch:checked + .label .fa-moon {
   right: -24%;
 }
 
-#switch:active+.label::before {
+#switch:active + .label::before {
   width: 35px;
 }
 
@@ -177,7 +180,7 @@
     height: 20px;
   }
 
-  #switch:checked+.label::before {
+  #switch:checked + .label::before {
     width: 20px;
     height: 20px;
   }
@@ -260,7 +263,7 @@
   transform: translate(-50%, -50%);
   height: 100%;
   min-width: 100%;
-  /* background: var(--white); */
+  background: var(--white);
 }
 
 .header-btn-icon {
@@ -292,8 +295,7 @@
   transition: stroke 0.25s ease-in-out;
 }
 
-.menu-close-icon:hover,
-.menu-close-icon:focus {
+.menu-close-icon:hover {
   stroke: var(--accet-green);
 }
 
@@ -308,8 +310,8 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
-(min-rezolution: 2dppx),
-(min-rezolution: 192dpi) {
+  (min-rezolution: 2dppx),
+  (min-rezolution: 192dpi) {
   .header-nav-menu-wrap {
     background-image: url(/img/bg-hero-mob_2x.png);
   }
