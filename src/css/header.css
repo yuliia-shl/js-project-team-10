@@ -79,6 +79,10 @@
   -o-transition: 0.8s ease;
 }
 
+.dark-theme .label::before {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 55% 25px);
+}
+
 .fa-sun,
 .fa-moon {
   font-size: 1.3rem;
