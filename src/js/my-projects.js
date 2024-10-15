@@ -216,7 +216,7 @@ height: 580px; src="${pathImagesMob1x_7}" srcset="${pathImagesMob1x_7} 1x, ${pat
       const firstNewItem = projectList.children[loadedItems];
       const firstNewItemHeight = firstNewItem.getBoundingClientRect().height;
 
-      window.scrollBy({
+      window.scrollBy( window.scrollBy(0, firstNewItemHeight * 0.5), {
         top: firstNewItemHeight,
         behavior: 'smooth',
       });
