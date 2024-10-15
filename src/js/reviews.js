@@ -23,11 +23,9 @@ const swiperForReviews = new Swiper(refs.swiper, {
   },
   slidesPerView: 1,
   spaceBetween: 16,
-  autoHeight: true,
   breakpoints: {
     768: {
       slidesPerView: 1,
-      autoHeight: false,
     },
     1280: {
       slidesPerView: 2,
@@ -45,16 +43,9 @@ const swiperForReviews = new Swiper(refs.swiper, {
   },
 });
 
-// async function getReviews() {
-//   const response = (
-//     await axios.get('https://portfolio-js.b.goit.study/api/reviews')
-//   ).data;
-//   return response;
-// }
-
 async function getReviews() {
   const response = await axios.get(
-    'https://portfolio-js.b.goit.study/api/review'
+    'https://portfolio-js.b.goit.study/api/reviews'
   );
   if (response.status !== 200) {
     throw new Error(`Request failed with status ${response.status}`);
@@ -72,7 +63,7 @@ async function renderReviews() {
         return `<li class="reviews-list-item swiper-slide">
                     <p class="reviews-text">${review}</p>
                     <div class="reviewer-info">
-                        <img class="reviewers-avatar" src="${avatar_url}" alt=" ${author} photo" loading="lazy" />
+                        <img class="reviewers-avatar" src="${avatar_url}" alt=" ${author}'s photo" loading="lazy" />
                         <h3 class="reviewers-name">${author}</h3>
                     </div>
                 </li>`;
@@ -93,10 +84,9 @@ async function renderReviews() {
 function showErrorMessage() {
   if (hasError) {
     iziToast.error({
-      message: 'No reviews were found :-(  ! Please try again later.',
-      position: 'topRight',
+      message: 'No reviews were found! Please try again later.',
+      position: 'bottomRight',
     });
-    // alert('An error occurred while loading reviews. Try again later.');
   }
 }
 
