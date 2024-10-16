@@ -60,7 +60,7 @@ async function renderReviews() {
     const reviewsData = await getReviews();
     const markup = reviewsData
       .map(({ author, avatar_url, review }) => {
-        return `<li class="reviews-list-item swiper-slide">
+        return `<li class="reviews-list-item swiper-slide" id="style-15">
                     <p class="reviews-text">${review}</p>
                     <div class="reviewer-info">
                         <img class="reviewers-avatar" src="${avatar_url}" alt=" ${author}'s photo" loading="lazy" />
@@ -69,12 +69,19 @@ async function renderReviews() {
                 </li>`;
       })
       .join('');
+    console.dir(swiperForReviews.params.breakpoints);
     refs.reviewsList.insertAdjacentHTML('beforeend', markup);
+    // console.dir(swiperForReviews);
   } catch (error) {
     hasError = true; // Встановлюємо прапорець, якщо сталася помилка
+    swiperForReviews.params.breakpoints[1280].slidesPerView = 1;
+    swiperForReviews.params.breakpoints[1280].spaceBetween = 16;
+    swiperForReviews.update();
+
+    console.dir(swiperForReviews.params.breakpoints);
     refs.reviewsList.insertAdjacentHTML(
       'beforeend',
-      '<li class="error-mock swiper-slide"><p>Not found</p></li>'
+      '<li class="error-mock"><p>We could not find what you are looking for.</p></li>'
     );
     console.error('Error fetching or rendering reviews:', error);
   }
