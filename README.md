@@ -54,7 +54,7 @@ To run this project locally, follow these steps:
 
 Bash
 
-git clone https://github.com/lloyd-jefferson/portfolio.git
+git clone https://github.com/yuliia-shl/js-project-team-10
 
 2. Navigate to the project directory:
 
