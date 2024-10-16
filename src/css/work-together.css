@@ -143,9 +143,9 @@
   transition: background-color 0.3s;
 }
 
-.contact-info a:hover {
+.contact-info a:hover,
+.contact-info a:focus {
   color: var(--accet-green);
-  text-decoration: none;
 }
 
 /* Стилізація форми */
@@ -229,19 +229,21 @@
   transition: background-color 0.3s;
 }
 
-@media screen and (min-width: 768px) {
-  .form-btn {
-    max-width: 173px;
-    display: flex;
-  }
-}
-
 .form-btn:hover {
   background-color: var(--hover);
 }
 
 .form-btn:focus {
-  outline: none;
+  outline: 1px solid;
+  outline-offset: 4px;
+  background-color: var(--hover);
+}
+
+@media screen and (min-width: 768px) {
+  .form-btn {
+    max-width: 173px;
+    display: flex;
+  }
 }
 
 .input-wrapper {
