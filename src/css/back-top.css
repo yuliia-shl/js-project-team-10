@@ -10,15 +10,18 @@
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
-  display: none; /* Спочатку кнопка прихована */
+  display: none;
+  /* Спочатку кнопка прихована */
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease-in-out;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 
 /* Анімація стрибка */
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -26,14 +29,20 @@
   100% {
     transform: translateY(0);
   }
+
   40% {
-    transform: translateY(-20px); /* Перший стрибок */
+    transform: translateY(-20px);
+    /* Перший стрибок */
   }
+
   60% {
-    transform: translateY(-10px); /* Другий стрибок */
+    transform: translateY(-10px);
+    /* Другий стрибок */
   }
+
   80% {
-    transform: translateY(-5px); /* Третій стрибок */
+    transform: translateY(-5px);
+    /* Третій стрибок */
   }
 }
 
