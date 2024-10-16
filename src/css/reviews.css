@@ -16,7 +16,7 @@
   background: #2A2D32;
   border-radius: 16px;
   padding: 32px;
-  min-height: 296px;
+  height: 296px;
   /* overflow-y: auto;
   scrollbar-width: thin;
   -webkit-overflow-scrolling: touch; */
@@ -28,7 +28,7 @@
   padding: 32px;
   height: 296px;
   width: 100%;
-  text-transform: uppercase;
+  text-align: center;
   font-weight: 300;
   font-size: 16px;
 }
@@ -40,36 +40,48 @@
 }
 
 .reviewers-name {
-  /* margin-left: 16px;
-  margin-bottom: 8px;
-  margin-top: 8px;*/
   font-weight: 600;
   font-size: 16px;
 }
 
 .reviewer-info {
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 16px;
-  width: 528px;
-  height: 40px; */
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
 .reviews-text {
+  overflow-y: auto;
   font-weight: 300;
   font-size: 16px;
-  overflow: hidden;
+  /* overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 7;
   line-clamp: 7;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical; */
   width: 100%;
   max-width: 100%;
+}
+
+.reviews-text::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+  border-radius: 16px;
+}
+
+.reviews-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.reviews-text::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--white);
+  background-image: -webkit-gradient(linear,
+      70% 0%,
+      75% 84%,
+      from(#e4e5e6),
+      to(#bcdfd1),
+      color-stop(.6, #bcdfd1))
 }
 
 .swiper-buttons {
@@ -151,7 +163,7 @@ button.swiper-button-disabled {
   }
 
   .reviews-list-item.swiper-slide {
-    min-height: 224px;
+    height: 224px;
   }
 
   .error-mock {
@@ -202,4 +214,13 @@ button.swiper-button-disabled {
 
 .dark-theme .error-mock {
   background-color: var(--charcoal-dt);
+}
+
+.dark-theme .reviews-text::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear,
+      70% 0%,
+      75% 84%,
+      from(#2a2d32),
+      to(#204136),
+      color-stop(.6, #204136))
 }

@@ -45,7 +45,7 @@ const swiperForReviews = new Swiper(refs.swiper, {
 
 async function getReviews() {
   const response = await axios.get(
-    'https://portfolio-js.b.goit.study/api/review'
+    'https://portfolio-js.b.goit.study/api/reviews'
   );
   if (response.status !== 200) {
     throw new Error(`Request failed with status ${response.status}`);
@@ -60,7 +60,7 @@ async function renderReviews() {
     const reviewsData = await getReviews();
     const markup = reviewsData
       .map(({ author, avatar_url, review }) => {
-        return `<li class="reviews-list-item swiper-slide">
+        return `<li class="reviews-list-item swiper-slide" id="style-15">
                     <p class="reviews-text">${review}</p>
                     <div class="reviewer-info">
                         <img class="reviewers-avatar" src="${avatar_url}" alt=" ${author}'s photo" loading="lazy" />
@@ -81,7 +81,7 @@ async function renderReviews() {
     console.dir(swiperForReviews.params.breakpoints);
     refs.reviewsList.insertAdjacentHTML(
       'beforeend',
-      '<li class="error-mock"><p>Not found</p></li>'
+      '<li class="error-mock"><p>We could not find what you are looking for.</p></li>'
     );
     console.error('Error fetching or rendering reviews:', error);
   }
