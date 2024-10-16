@@ -48,9 +48,9 @@
 
 :root {
   /*шрифти*/
-  --font-family: "Poppins", sans-serif;
-  --second-family: "Impact", sans-serif;
-  --third-family: "Montserrat", sans-serif;
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Impact', sans-serif;
+  --third-family: 'Montserrat', sans-serif;
 
   /* Кольори */
   --black: #292929;
@@ -89,16 +89,6 @@ body {
   color: var(--white-dt);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
 p:last-child {
   margin-bottom: 0;
 }
@@ -114,6 +104,7 @@ a {
 
 button {
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 img {
