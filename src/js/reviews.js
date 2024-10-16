@@ -45,7 +45,7 @@ const swiperForReviews = new Swiper(refs.swiper, {
 
 async function getReviews() {
   const response = await axios.get(
-    'https://portfolio-js.b.goit.study/api/reviews'
+    'https://portfolio-js.b.goit.study/api/review'
   );
   if (response.status !== 200) {
     throw new Error(`Request failed with status ${response.status}`);

@@ -23,14 +23,91 @@
 }
 
 .error-mock {
-  background-color: var(--light-grey);
-  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   padding: 32px;
   height: 296px;
-  width: 100%;
-  text-align: center;
+  background-color: var(--light-grey);
+  border: 2px solid var(--accent-green);
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px rgba(0, 255, 128, 0.1);
+  color: var(--accent-green);
   font-weight: 300;
   font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-theme .error-mock {
+  background-color: var(--charcoal-dt);
+  color: var(--light-green);
+  border-color: var(--accent-green-dark);
+  box-shadow: 0px 4px 15px rgba(0, 255, 128, 0.2);
+}
+
+/* Ефект підсвічування при наведенні */
+.error-mock:hover {
+  box-shadow: 0px 8px 30px rgba(0, 255, 128, 0.2), 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.error-mock::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 255, 128, 0.4), transparent 60%);
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.error-mock:hover::before {
+  transform: rotate(0deg) scale(1.1);
+}
+
+.error-mock p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+/* Анімація появи */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Плавний перехід */
+.error-mock p {
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.error-mock:hover p {
+  color: var(--accent-green);
+  font-size: 20px;
+}
+
+/* Темний режим */
+.dark-theme .error-mock::before {
+  background: radial-gradient(circle, rgba(0, 128, 0, 0.4), transparent 60%);
 }
 
 .reviewers-avatar {
