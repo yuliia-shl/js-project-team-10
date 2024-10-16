@@ -80,7 +80,6 @@
     background-image: url(/img/bg-benefits-work-desk.png);
     background-repeat: no-repeat;
     background-size: 526px 408px;
-    /* background-position: bottom 384px right 32px; */
     background-position: bottom 460px right 50px;
   }
 
@@ -99,10 +98,6 @@
     .benefits-container {
       background-image: url(/img/bg-benefits-work-desk-2x.png);
     }
-  }
-
-  .benefits-list {
-    top: 392px;
   }
 
   .benefits-list-item-text {
