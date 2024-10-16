@@ -74,15 +74,27 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transition: 0.8s ease;
+  transition: clip-path 0.8s ease;
   -webkit-transition: 0.8s ease;
   -moz-transition: 0.8s ease;
   -ms-transition: 0.8s ease;
   -o-transition: 0.8s ease;
+  /* transition: clip-path 0.9s ease-in-out; */
 }
 
 .dark-theme .label::before {
-  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 55% 25px);
+  clip-path: polygon(
+    50% 0%,
+    100% 10%,
+    100% 35%,
+    100% 70%,
+    100% 90%,
+    50% 100%,
+    63% 81%,
+    69% 65%,
+    70% 46%,
+    66% 26%
+  );
 }
 
 .fa-sun,
