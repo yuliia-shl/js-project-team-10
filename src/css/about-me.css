@@ -1,3 +1,8 @@
+/* ----- About me section ----- */
+#about-me {
+  padding-top: 80px;
+}
+
 .about-me-title {
   margin-bottom: 40px;
   font-size: 52px;
@@ -126,6 +131,7 @@
   }
 
   #about-me {
+    padding-top: 124px;
     background-size: 336px 252px;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,8 +146,8 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
     #about-me {
       background-image: url('/img/bg-about-tab-2x.png');
     }
@@ -194,6 +200,7 @@
 
   #about-me {
     background-size: 384px 288px;
+    padding-top: 164px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/img/bg-about-desk.png');
@@ -207,8 +214,8 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
     #about-me {
       background-image: url('/img/bg-about-desc-2x.png');
     }

@@ -8,6 +8,7 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
+    position: relative;
     background-size: 528px 408px;
     background-position: right top;
     background-repeat: no-repeat;
@@ -29,6 +30,7 @@
     background-position: 95% 84px;
     padding-top: 164px;
     background-image: url('/img/bg-benefits-work-desk.png');
+    background-attachment: local;
   }
 }
 
