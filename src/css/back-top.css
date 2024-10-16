@@ -1,0 +1,43 @@
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accet-green);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Спочатку кнопка прихована */
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Анімація стрибка */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px); /* Перший стрибок */
+  }
+  60% {
+    transform: translateY(-10px); /* Другий стрибок */
+  }
+  80% {
+    transform: translateY(-5px); /* Третій стрибок */
+  }
+}
+
+.back-to-top:hover {
+  background-color: var(--hover);
+  animation: bounce 1s ease infinite;
+}

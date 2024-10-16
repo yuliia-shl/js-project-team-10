@@ -8,8 +8,8 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
-    background-size: 40%;
-    background-position: 95% 1px;
+    background-size: 528px 408px;
+    background-position: right top;
     background-repeat: no-repeat;
     background-image: url('/img/bg-work-tab.png');
     padding-top: 124px;
@@ -38,8 +38,8 @@
 }
 
 #work-together h2 {
-  margin-bottom: 40px;
   text-align: left;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -52,10 +52,6 @@
   #work-together h2 {
     margin-bottom: 80px;
   }
-}
-
-#work-together .highlight {
-  color: var(--accet-green);
 }
 
 #work-together p {
@@ -214,6 +210,7 @@
 #contactForm textarea::placeholder {
   color: var(--black);
 }
+
 .form-btn {
   width: 100%;
   max-width: 400px;
