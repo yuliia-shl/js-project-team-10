@@ -8,6 +8,7 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
+    position: relative;
     background-size: 528px 408px;
     background-position: right top;
     background-repeat: no-repeat;
