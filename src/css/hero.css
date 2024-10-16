@@ -89,10 +89,6 @@
 
 .hero-social-item {
   width: 100%;
-  padding-top: 12px;
-  display: flex;
-  padding-bottom: 12px;
-  justify-content: center;
 }
 
 .hero-social-item:hover,
@@ -101,8 +97,13 @@
 }
 
 .hero-social-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
   font-weight: 300;
   transition: color 0.25s ease-in-out;
+  align-self: center;
 }
 
 @media screen and (min-width: 360px) {
@@ -167,10 +168,17 @@
 
   .hero-social-item {
     width: auto;
-    display: block;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
   }
+
+  .hero-social-link {
+    padding: 40px 0;
+    font-weight: 300;
+    transition: color 0.25s ease-in-out;
+    align-self: center;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
