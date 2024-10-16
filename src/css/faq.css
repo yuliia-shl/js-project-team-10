@@ -7,6 +7,7 @@
   padding: 28px 24px;
   border-radius: 16px;
   position: relative;
+  transition: background-color 0.3s ease;
 }
 
 .faq-ac::after {
@@ -119,6 +120,7 @@
     background-size: 536px 422px;
     background-position: left bottom;
   }
+
   .faq-ac-container {
     max-width: 592px;
     margin-top: 276px;
