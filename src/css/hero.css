@@ -94,7 +94,8 @@
   transition: color 0.25s ease-in-out;
 }
 
-.hero-social-link:hover {
+.hero-social-link:hover,
+.hero-social-link:focus {
   color: var(--accet-green);
 }
 
@@ -226,6 +227,7 @@
   background-color: var(--charcoal-dt);
 }
 
-.dark-theme .hero-social-link:hover {
+.dark-theme .hero-social-link:hover,
+.dark-theme .hero-social-link:focus {
   color: var(--accet-green-dt);
 }
