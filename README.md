@@ -10,7 +10,8 @@ optimized for desktop, tablet and mobile devices.
 
 ## Features
 
-- Header with Menu: A sticky navigation bar allowing quick access to 3 sections.
+- Header with Menu: A standard navigation bar allowing quick access to different sections of the page. The mobile version includes a burger button for easy navigation.
+ - Theme Change Button: A toggle button for switching between dark and light themes, enhancing user customization and comfort.
 - Hero Section: Introduction with a professional photo, name, and a tagline.
 - About Me: Brief description of Lloyd's background, experience, and passion for
   development.
@@ -29,6 +30,7 @@ optimized for desktop, tablet and mobile devices.
 - Work Together: Call to action encouraging visitors to contact Lloyd for
   collaboration.
 - Footer: Contains links to Lloyd's social media profiles and contact details.
+- Back to Header Button: A floating button that allows users to quickly return to the top of the page (header section) for easy navigation.
 
 ---
 
@@ -54,7 +56,7 @@ To run this project locally, follow these steps:
 
 Bash
 
-git clone https://github.com/lloyd-jefferson/portfolio.git
+git clone https://github.com/yuliia-shl/js-project-team-10
 
 2. Navigate to the project directory:
 
