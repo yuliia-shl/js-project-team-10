@@ -45,24 +45,28 @@ export const initHeader = () => {
 
   // Dark/White Themes
   const themeToggle = document.getElementById('switch');
+  const favicon = document.getElementById('favicon');
 
   themeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-theme');
 
     if (document.body.classList.contains('dark-theme')) {
       localStorage.setItem('theme', 'dark');
+      favicon.href = '/favicon-dark.ico'; // Заміна на темний фавікон
     } else {
       localStorage.setItem('theme', 'light');
+      favicon.href = '/favicon.ico'; // Заміна на світлий фавікон
     }
   });
 
-  window.addEventListener('load', () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark-theme');
-      themeToggle.checked = true;
-    }
-  });
+  // Перевірка теми при завантаженні сторінки
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-theme');
+    themeToggle.checked = true; // Якщо темна тема, перемикач також вмикаємо
+    favicon.href = '/favicon-dark.ico'; // Встановлення темного фавікона при завантаженні
+  } else {
+    favicon.href = '/favicon.ico'; // Встановлення світлого фавікона при завантаженні
+  }
 };
 
 /* =====   menu options   ===== */

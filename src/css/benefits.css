@@ -76,7 +76,7 @@
 
 @media screen and (min-width: 1280px) {
   .benefits-section {
-    padding-top: 0;
+    padding-top: 0px;
   }
 
   .benefits-title {
@@ -94,8 +94,8 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-rezolution: 2dppx),
-    (min-rezolution: 192dpi) {
+  (min-rezolution: 2dppx),
+  (min-rezolution: 192dpi) {
     .benefits-container {
       background-image: url(/img/bg-benefits-work-desk-2x.png);
     }
