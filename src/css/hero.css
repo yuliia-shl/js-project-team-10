@@ -167,6 +167,7 @@
 
   .hero-social-item {
     width: auto;
+    display: block;
     padding-top: 40px;
     padding-bottom: 40px;
   }
