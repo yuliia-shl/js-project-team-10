@@ -45,7 +45,7 @@ const swiperForReviews = new Swiper(refs.swiper, {
 
 async function getReviews() {
   const response = await axios.get(
-    'https://portfolio-js.b.goit.study/api/reviews'
+    'https://portfolio-js.b.goit.study/api/review'
   );
   if (response.status !== 200) {
     throw new Error(`Request failed with status ${response.status}`);
@@ -69,12 +69,19 @@ async function renderReviews() {
                 </li>`;
       })
       .join('');
+    console.dir(swiperForReviews.params.breakpoints);
     refs.reviewsList.insertAdjacentHTML('beforeend', markup);
+    // console.dir(swiperForReviews);
   } catch (error) {
     hasError = true; // Встановлюємо прапорець, якщо сталася помилка
+    swiperForReviews.params.breakpoints[1280].slidesPerView = 1;
+    swiperForReviews.params.breakpoints[1280].spaceBetween = 16;
+    swiperForReviews.update();
+
+    console.dir(swiperForReviews.params.breakpoints);
     refs.reviewsList.insertAdjacentHTML(
       'beforeend',
-      '<li class="error-mock swiper-slide"><p>Not found</p></li>'
+      '<li class="error-mock"><p>Not found</p></li>'
     );
     console.error('Error fetching or rendering reviews:', error);
   }
