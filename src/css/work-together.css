@@ -30,6 +30,7 @@
     background-position: 95% 84px;
     padding-top: 164px;
     background-image: url('/img/bg-benefits-work-desk.png');
+    background-attachment: local;
   }
 }
 
