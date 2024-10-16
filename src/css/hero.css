@@ -24,11 +24,14 @@
   margin-bottom: 40px;
 }
 
+.hero-title-wrap {
+  margin-bottom: 40px
+}
+
 .hero-btn-wrap {
   display: inline-flex;
   align-items: center;
   position: relative;
-  margin-bottom: 40px;
 }
 
 .hero-btn-arrow {
@@ -191,7 +194,7 @@
     margin-bottom: 80px;
   }
 
-  .hero-btn-wrap {
+  .hero-title-wrap {
     margin-bottom: 0;
   }
 
