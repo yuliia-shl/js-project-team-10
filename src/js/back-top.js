@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 
 // Плавне повернення догори при натисканні
 function fastScrollToTop() {
-  const scrollSpeed = 0.1; // Висока швидкість (чим вище число, тим швидше)
+  const scrollSpeed = 1; // Висока швидкість (чим вище число, тим швидше)
   const currentScroll = window.scrollY;
 
   if (currentScroll > 0) {
