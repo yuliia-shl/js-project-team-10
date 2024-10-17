@@ -274,7 +274,7 @@
   display: none;
 }
 
-input:valid+.success-icon {
+input:valid + .success-icon {
   display: block;
   border: 1px solid var(--accet-green);
   border: none;
@@ -292,11 +292,11 @@ textarea:valid {
   /* або замініть на бажаний колір */
 }
 
-input:invalid+.success-icon {
+input:invalid + .success-icon {
   display: none;
 }
 
-input:valid+.success-icon+.error-message {
+input:valid + .success-icon + .error-message {
   display: none;
 }
 
@@ -316,6 +316,7 @@ input:-webkit-autofill {
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .popup-content {
@@ -413,7 +414,7 @@ input:-webkit-autofill {
 }
 
 .dark-theme .popup-content,
-.dark-theme #contactForm input:valid+.success-icon,
+.dark-theme #contactForm input:valid + .success-icon,
 .dark-theme .close-btn {
   background-color: var(--black-dt);
 }
