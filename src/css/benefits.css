@@ -76,21 +76,20 @@
 
 @media screen and (min-width: 1280px) {
   .benefits-section {
-    padding-top: 0px;
+    padding-top: 116px;
+    background-image: url(/img/bg-benefits-work-desk.png);
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: bottom 460px right 50px;
   }
 
   .benefits-title {
     max-width: 690px;
+    margin-bottom: 120px;
   }
 
   .benefits-container {
-    padding-top: 116px;
-    padding-bottom: 304px;
     position: relative;
-    background-image: url(/img/bg-benefits-work-desk.png);
-    background-repeat: no-repeat;
-    background-size: 526px 408px;
-    background-position: bottom 384px right 32px;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -105,12 +104,9 @@
     max-width: 384px;
   }
 
-  .benefits-list {
-    position: absolute;
-    top: 392px;
-  }
-
   .benefits-list-item:first-child {
     margin-left: 832px;
+    position: absolute;
+    top: 276px;
   }
 }

@@ -8,6 +8,7 @@
 
 @media screen and (min-width: 768px) {
   #work-together {
+    position: relative;
     background-size: 528px 408px;
     background-position: right top;
     background-repeat: no-repeat;
@@ -29,6 +30,7 @@
     background-position: 95% 84px;
     padding-top: 164px;
     background-image: url('/img/bg-benefits-work-desk.png');
+    background-attachment: local;
   }
 }
 
@@ -143,9 +145,9 @@
   transition: background-color 0.3s;
 }
 
-.contact-info a:hover {
+.contact-info a:hover,
+.contact-info a:focus {
   color: var(--accet-green);
-  text-decoration: none;
 }
 
 /* Стилізація форми */
@@ -229,19 +231,21 @@
   transition: background-color 0.3s;
 }
 
-@media screen and (min-width: 768px) {
-  .form-btn {
-    max-width: 173px;
-    display: flex;
-  }
-}
-
 .form-btn:hover {
   background-color: var(--hover);
 }
 
 .form-btn:focus {
-  outline: none;
+  outline: 1px solid;
+  outline-offset: 4px;
+  background-color: var(--hover);
+}
+
+@media screen and (min-width: 768px) {
+  .form-btn {
+    max-width: 173px;
+    display: flex;
+  }
 }
 
 .input-wrapper {

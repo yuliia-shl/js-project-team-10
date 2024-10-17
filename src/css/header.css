@@ -1,7 +1,16 @@
 /* ----- Header ----- */
 .header-section {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 64px;
+  z-index: 4;
+  background-color: #F0F0F0;
+}
+
+body.dark-theme .header-section {
+  background-color: #1E2023;
+  color: #FFFFFF;
 }
 
 .header-container {
