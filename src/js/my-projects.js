@@ -197,8 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextItems = hiddenItems.slice(loadedItems, loadedItems + 3);
 
     if (nextItems.length > 0) {
-      // const lastVisibleItem =
-      //   projectList.children[projectList.children.length - 1];
+      const lastVisibleItem =
+        projectList.children[projectList.children.length - 1];
 
       nextItems.forEach(itemHTML => {
         const template = document.createElement('template');
@@ -207,15 +207,13 @@ document.addEventListener('DOMContentLoaded', () => {
         projectList.appendChild(newItem);
       });
 
-      const firstNewItem = projectList.children[loadedItems];
-      console.dir(projectList.children[loadedItems]);
-      
+      const firstNewItem = projectList.children[loadedItems];      
       const firstNewItemHeight = firstNewItem.getBoundingClientRect().height;
 
-      window.scrollBy( window.scrollBy(0, firstNewItemHeight * 0.5), {
-        top: firstNewItemHeight,
-        behavior: 'smooth',
-      });
+      window.scrollBy({
+          top: firstNewItemHeight * 0.6,
+          behavior: 'smooth',
+        });
 
       loadedItems += nextItems.length;
     }
