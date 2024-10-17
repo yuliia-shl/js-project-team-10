@@ -1,8 +1,11 @@
+/* ----- Section Hero ----- */
 #hero {
   padding-top: 112px;
   padding-bottom: 0;
   background-image: url(/img/bg-hero-mob_1x.png);
   background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -25,7 +28,7 @@
 }
 
 .hero-title-wrap {
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
 .hero-btn-wrap {
@@ -178,12 +181,11 @@
     transition: color 0.25s ease-in-out;
     align-self: center;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
   #hero {
-    background-image: url(/img/bg-hero-desk_1x.png)
+    background-image: url(/img/bg-hero-desk_1x.png);
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -222,7 +224,6 @@
   .hero-image {
     display: block;
   }
-
 }
 
 /* Dark theme */

@@ -113,6 +113,14 @@
     background-position: left bottom;
   }
 
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .wrap {
+      background-image: url('/img/bg-FAQ-desk_2x.png');
+    }
+  }
+
   .faq-ac-container {
     max-width: 592px;
     margin-top: 276px;
