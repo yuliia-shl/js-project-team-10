@@ -3,7 +3,6 @@
 #work-together {
   text-align: center;
   background-color: inherit;
-  /* margin: 0 auto; */
 }
 
 @media screen and (min-width: 768px) {
@@ -21,7 +20,6 @@
   .lwt-container {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: flex-start;
   }
 
@@ -276,32 +274,29 @@
   display: none;
 }
 
-input:valid + .success-icon {
+input:valid+.success-icon {
   display: block;
   border: 1px solid var(--accet-green);
   border: none;
-  /* background-color: var(--light-grey); */
 }
 
 input:valid {
   outline: none;
   border-color: var(--hover-grey);
   box-shadow: none;
-  /* background-color: var(--light-grey); */
 }
 
 textarea:valid {
   outline: none;
   border-color: var(--hover-grey);
   /* або замініть на бажаний колір */
-  /* box-shadow: none; */
 }
 
-input:invalid + .success-icon {
+input:invalid+.success-icon {
   display: none;
 }
 
-input:valid + .success-icon + .error-message {
+input:valid+.success-icon+.error-message {
   display: none;
 }
 
@@ -418,7 +413,7 @@ input:-webkit-autofill {
 }
 
 .dark-theme .popup-content,
-.dark-theme #contactForm input:valid + .success-icon,
+.dark-theme #contactForm input:valid+.success-icon,
 .dark-theme .close-btn {
   background-color: var(--black-dt);
 }

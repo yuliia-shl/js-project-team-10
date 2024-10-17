@@ -82,18 +82,16 @@
 }
 
 .dark-theme .label::before {
-  clip-path: polygon(
-    50% 0%,
-    100% 10%,
-    100% 35%,
-    100% 70%,
-    100% 90%,
-    50% 100%,
-    63% 81%,
-    69% 65%,
-    70% 46%,
-    66% 26%
-  );
+  clip-path: polygon(50% 0%,
+      100% 10%,
+      100% 35%,
+      100% 70%,
+      100% 90%,
+      50% 100%,
+      63% 81%,
+      69% 65%,
+      70% 46%,
+      66% 26%);
 }
 
 .fa-sun,
@@ -112,11 +110,11 @@
   right: 9%;
 }
 
-#switch:checked + .label {
+#switch:checked+.label {
   background-color: var(--black);
 }
 
-#switch:checked + .label::before {
+#switch:checked+.label::before {
   content: '';
   -webkit-transform: translateX(25px);
   -ms-transform: translateX(25px);
@@ -131,15 +129,15 @@
   background-position: center;
 }
 
-#switch:checked + .label .fa-sun {
+#switch:checked+.label .fa-sun {
   left: 11%;
 }
 
-#switch:checked + .label .fa-moon {
+#switch:checked+.label .fa-moon {
   right: -24%;
 }
 
-#switch:active + .label::before {
+#switch:active+.label::before {
   width: 35px;
 }
 
@@ -196,7 +194,7 @@
     height: 20px;
   }
 
-  #switch:checked + .label::before {
+  #switch:checked+.label::before {
     width: 20px;
     height: 20px;
   }
@@ -321,21 +319,19 @@
   justify-content: center;
   flex-grow: 1;
   align-items: center;
-  /* margin-bottom: 20px; */
   background-image: url(/img/bg-hero-mob_1x.png);
   background-repeat: no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-rezolution: 2dppx),
-  (min-rezolution: 192dpi) {
+(min-rezolution: 2dppx),
+(min-rezolution: 192dpi) {
   .header-nav-menu-wrap {
     background-image: url(/img/bg-hero-mob_2x.png);
   }
 }
 
 .header-mobile-navigation {
-  /* padding-top: 200px; */
   animation: burgerAnimation 0.4s;
 }
 
@@ -344,12 +340,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
-  /* gap: 24px; */
 }
 
 .header-mobile-item {
-  /* padding-left: initial; */
   padding: 12px;
   cursor: pointer;
   transition: color 0.25s ease-in-out;

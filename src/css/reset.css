@@ -120,8 +120,6 @@ img {
 
 .container {
   width: 320px;
-  /* width: 100%;
-  max-width: 360px; */
   padding: 0 20px;
   margin: 0 auto;
 }

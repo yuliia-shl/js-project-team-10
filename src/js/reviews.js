@@ -69,7 +69,6 @@ async function renderReviews() {
                 </li>`;
       })
       .join('');
-    console.dir(swiperForReviews.params.breakpoints);
     refs.reviewsList.insertAdjacentHTML('beforeend', markup);
     // console.dir(swiperForReviews);
   } catch (error) {

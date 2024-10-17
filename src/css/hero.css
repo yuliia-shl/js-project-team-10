@@ -1,3 +1,4 @@
+/* ----- Section Hero ----- */
 #hero {
   padding-top: 112px;
   padding-bottom: 0;
@@ -8,8 +9,8 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
   #hero {
     background-image: url(/img/bg-hero-mob_2x.png);
   }
@@ -125,8 +126,8 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
     #hero {
       background-image: url(/img/bg-hero-tab_2x.png);
     }
@@ -188,8 +189,8 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
     #hero {
       background-image: url(/img/bg-hero-desk_2x.png);
     }
