@@ -2,10 +2,8 @@ export const initHeader = () => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-  const bodyContainer = document.body;
   const toggleMenu = () => {
-    bodyContainer.style.overflow =
-      bodyContainer.style.overflow === 'hidden' ? 'auto' : 'hidden';
+    // bodyContainer.style.overflow = bodyContainer.style.overflow === 'hidden' ? 'auto' : 'hidden';
     const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -29,7 +27,7 @@ export const initHeader = () => {
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
   });
-  
+
   // Dark/White Themes
   const themeToggle = document.getElementById('switch');
   const favicon = document.getElementById('favicon');
@@ -59,6 +57,7 @@ export const initHeader = () => {
 /* =====   menu options   ===== */
 
 export const menu = document.addEventListener('DOMContentLoaded', function () {
+  const bodyContainer = document.body;
   const openMenuButton = document.querySelector('.js-open-menu');
   const closeMenuButton = document.querySelector('.js-close-menu');
   const menuContainer = document.getElementById('mobile-menu');
@@ -67,17 +66,20 @@ export const menu = document.addEventListener('DOMContentLoaded', function () {
   // Відкриває меню
   openMenuButton.addEventListener('click', function () {
     menuContainer.classList.add('active');
+    bodyContainer.style.overflow = 'hidden';
     openMenuButton.setAttribute('aria-expanded', 'true');
   });
 
   // Закриває меню
   closeMenuButton.addEventListener('click', function () {
     menuContainer.classList.remove('active');
+    bodyContainer.style.overflow = 'auto';
     openMenuButton.setAttribute('aria-expanded', 'false');
   });
 
   menuLinks.forEach(link => {
     link.addEventListener('click', function () {
+      bodyContainer.style.overflow = 'auto';
       menuContainer.classList.remove('active');
       openMenuButton.setAttribute('aria-expanded', 'false');
     });
