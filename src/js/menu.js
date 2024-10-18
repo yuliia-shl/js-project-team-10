@@ -2,7 +2,10 @@ export const initHeader = () => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const bodyContainer = document.body;
   const toggleMenu = () => {
+    bodyContainer.style.overflow =
+      bodyContainer.style.overflow === 'hidden' ? 'auto' : 'hidden';
     const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -26,23 +29,6 @@ export const initHeader = () => {
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
   });
-
-  // document.querySelectorAll('a[href^="#"').forEach(link => {
-  //   link.addEventListener('click', function (e) {
-  //     e.preventDefault();
-  //     let href = this.getAttribute('href').substring(1);
-  //     const scrollTarget = document.getElementById(href);
-  //     const topOffset =
-  //       document.querySelector('.header-navigation').offsetHeight;
-  //     const elementPosition = scrollTarget.getBoundingClientRect().top;
-  //     const offsetPosition = elementPosition - topOffset;
-  //     window.scrollBy({
-  //       top: offsetPosition,
-  //       behavior: 'smooth',
-  //     });
-  //   });
-  // });
-
   // Dark/White Themes
   const themeToggle = document.getElementById('switch');
   const favicon = document.getElementById('favicon');
