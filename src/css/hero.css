@@ -4,8 +4,8 @@
   padding-bottom: 0;
   background-image: url(/img/bg-hero-mob_1x.png);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-attachment: fixed;
+  background-position: center 16px;
+
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -13,6 +13,7 @@
 (min-resolution: 192dpi) {
   #hero {
     background-image: url(/img/bg-hero-mob_2x.png);
+    background-size: 320px 704px;
   }
 }
 
@@ -130,6 +131,7 @@
   (min-resolution: 192dpi) {
     #hero {
       background-image: url(/img/bg-hero-tab_2x.png);
+      background-size: 704px 896px;
     }
   }
 
@@ -193,6 +195,7 @@
   (min-resolution: 192dpi) {
     #hero {
       background-image: url(/img/bg-hero-desk_2x.png);
+      background-size: 1216px 772px;
     }
   }
 
