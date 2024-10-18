@@ -2,7 +2,10 @@ export const initHeader = () => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const bodyContainer = document.body;
   const toggleMenu = () => {
+    bodyContainer.style.overflow =
+      bodyContainer.style.overflow === 'hidden' ? 'auto' : 'hidden';
     const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -26,7 +29,7 @@ export const initHeader = () => {
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
   });
-
+  
   // Dark/White Themes
   const themeToggle = document.getElementById('switch');
   const favicon = document.getElementById('favicon');
