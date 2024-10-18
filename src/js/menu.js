@@ -3,6 +3,7 @@ export const initHeader = () => {
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const toggleMenu = () => {
+    // bodyContainer.style.overflow = bodyContainer.style.overflow === 'hidden' ? 'auto' : 'hidden';
     const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -56,6 +57,7 @@ export const initHeader = () => {
 /* =====   menu options   ===== */
 
 export const menu = document.addEventListener('DOMContentLoaded', function () {
+  const bodyContainer = document.body;
   const openMenuButton = document.querySelector('.js-open-menu');
   const closeMenuButton = document.querySelector('.js-close-menu');
   const menuContainer = document.getElementById('mobile-menu');
@@ -64,17 +66,20 @@ export const menu = document.addEventListener('DOMContentLoaded', function () {
   // Відкриває меню
   openMenuButton.addEventListener('click', function () {
     menuContainer.classList.add('active');
+    bodyContainer.style.overflow = 'hidden';
     openMenuButton.setAttribute('aria-expanded', 'true');
   });
 
   // Закриває меню
   closeMenuButton.addEventListener('click', function () {
     menuContainer.classList.remove('active');
+    bodyContainer.style.overflow = 'auto';
     openMenuButton.setAttribute('aria-expanded', 'false');
   });
 
   menuLinks.forEach(link => {
     link.addEventListener('click', function () {
+      bodyContainer.style.overflow = 'auto';
       menuContainer.classList.remove('active');
       openMenuButton.setAttribute('aria-expanded', 'false');
     });
