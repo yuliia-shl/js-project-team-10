@@ -29,6 +29,7 @@ export const initHeader = () => {
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
   });
+
   // Dark/White Themes
   const themeToggle = document.getElementById('switch');
   const favicon = document.getElementById('favicon');

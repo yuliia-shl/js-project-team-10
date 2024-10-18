@@ -17,9 +17,6 @@
   border-radius: 16px;
   padding: 32px;
   height: 296px;
-  /* overflow-y: auto;
-  scrollbar-width: thin;
-  -webkit-overflow-scrolling: touch; */
 }
 
 .error-mock {
@@ -131,11 +128,6 @@
   overflow-y: auto;
   font-weight: 300;
   font-size: 16px;
-  /* overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 7;
-  line-clamp: 7;
-  -webkit-box-orient: vertical; */
   width: 100%;
   max-width: 100%;
 }

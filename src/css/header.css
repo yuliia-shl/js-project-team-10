@@ -272,7 +272,7 @@ body.dark-theme .header-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 103;
 }
 
 /* Активне меню з'являється на екрані */
@@ -330,7 +330,6 @@ body.dark-theme .header-section {
   justify-content: center;
   flex-grow: 1;
   align-items: center;
-  /* margin-bottom: 20px; */
   background-image: url(/img/bg-hero-mob_1x.png);
   background-repeat: no-repeat;
 }
@@ -344,21 +343,18 @@ body.dark-theme .header-section {
 }
 
 .header-mobile-navigation {
-  /* padding-top: 200px; */
   animation: burgerAnimation 0.4s;
 }
 
 /* -----  */
 .header-mobile-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
-  /* gap: 24px; */
 }
 
 .header-mobile-item {
-  /* padding-left: initial; */
   padding: 12px;
   cursor: pointer;
   transition: color 0.25s ease-in-out;
